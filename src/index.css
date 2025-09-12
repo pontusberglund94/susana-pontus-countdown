@@ -2,41 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Spanish-inspired wedding design system
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Spanish-inspired color palette */
+    --background: 30 50% 98%;
+    --foreground: 25 30% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 30 50% 96%;
+    --card-foreground: 25 30% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 30 50% 98%;
+    --popover-foreground: 25 30% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Terracotta primary */
+    --primary: 15 65% 55%;
+    --primary-foreground: 30 50% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm cream secondary */
+    --secondary: 45 40% 90%;
+    --secondary-foreground: 25 30% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Olive green muted */
+    --muted: 75 25% 85%;
+    --muted-foreground: 25 20% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Golden accent */
+    --accent: 45 80% 65%;
+    --accent-foreground: 25 30% 15%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 30 50% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 30 30% 88%;
+    --input: 30 30% 90%;
+    --ring: 15 65% 55%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Spanish wedding specific colors */
+    --terracotta: 15 65% 55%;
+    --terracotta-light: 15 55% 70%;
+    --terracotta-dark: 15 75% 40%;
+    --olive: 75 35% 45%;
+    --olive-light: 75 25% 65%;
+    --cream: 45 40% 92%;
+    --gold: 45 80% 65%;
+    --sage: 85 20% 70%;
+
+    /* Gradients */
+    --gradient-sunset: linear-gradient(135deg, hsl(var(--terracotta)), hsl(var(--gold)));
+    --gradient-earth: linear-gradient(180deg, hsl(var(--cream)), hsl(var(--terracotta-light)));
+    --gradient-olive: linear-gradient(45deg, hsl(var(--olive-light)), hsl(var(--sage)));
+
+    /* Shadows */
+    --shadow-warm: 0 10px 30px -10px hsl(var(--terracotta) / 0.2);
+    --shadow-soft: 0 4px 20px -4px hsl(var(--olive) / 0.15);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
