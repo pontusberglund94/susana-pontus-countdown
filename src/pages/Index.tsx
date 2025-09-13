@@ -1,13 +1,17 @@
 import WeddingCountdown from '@/components/WeddingCountdown';
 import FloralDivider from '@/components/FloralDivider';
+import LanguageToggle from '@/components/LanguageToggle';
+import { useLanguage } from '@/contexts/LanguageContext';
 import heroImage from '@/assets/wedding-hero.jpg';
 
 const Index = () => {
+  const { t } = useLanguage();
   // Wedding date: April 18, 2026
   const weddingDate = new Date('2026-04-18T17:00:00');
 
   return (
     <div className="min-h-screen bg-background">
+      <LanguageToggle />
       {/* Hero Section */}
       <section 
         className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
@@ -23,10 +27,10 @@ const Index = () => {
               Pontus <span className="text-gold">&</span> Susana
             </h1>
             <p className="text-xl md:text-2xl text-cream mb-2 font-light tracking-wide">
-              Nos Casamos
+              {t('hero.weAreGettingMarried')}
             </p>
             <p className="text-lg md:text-xl text-cream/90 mb-12 font-light">
-              18 de Abril, 2026
+              {t('hero.date')}
             </p>
           </div>
           
@@ -38,7 +42,7 @@ const Index = () => {
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-cream/70">
           <div className="flex flex-col items-center">
-            <span className="text-sm mb-2 font-light tracking-wider">Descubre más</span>
+            <span className="text-sm mb-2 font-light tracking-wider">{t('hero.discoverMore')}</span>
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
@@ -52,16 +56,15 @@ const Index = () => {
           <FloralDivider />
           
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary mb-8 animate-bounce-in">
-            Nuestra Historia
+            {t('story.title')}
           </h2>
           
           <div className="prose prose-lg max-w-3xl mx-auto text-foreground/80 leading-relaxed">
             <p className="text-lg md:text-xl mb-6 font-light animate-bounce-in" style={{ animationDelay: '0.2s' }}>
-              Dos corazones que se encontraron y decidieron latir juntos para siempre.
+              {t('story.subtitle')}
             </p>
             <p className="text-base md:text-lg animate-bounce-in" style={{ animationDelay: '0.4s' }}>
-              El amor verdadero no tiene fin, y el nuestro es la prueba de que los cuentos de hadas sí existen.
-              Te invitamos a celebrar con nosotros este nuevo capítulo de nuestras vidas.
+              {t('story.description')}
             </p>
           </div>
           
@@ -73,7 +76,7 @@ const Index = () => {
       <section className="py-20 px-4 bg-gradient-earth">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary text-center mb-16 animate-bounce-in">
-            Detalles de la Celebración
+            {t('details.title')}
           </h2>
           
           <div className="grid md:grid-cols-2 gap-12">
@@ -84,10 +87,10 @@ const Index = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
-              <h3 className="font-serif text-2xl font-semibold text-primary mb-4">Ceremonia</h3>
-              <p className="text-muted-foreground mb-2">18 de Abril, 2026</p>
-              <p className="text-muted-foreground mb-2">17:00 hrs</p>
-              <p className="text-sm text-muted-foreground">S'Olivaret, Mallorca</p>
+              <h3 className="font-serif text-2xl font-semibold text-primary mb-4">{t('details.ceremony')}</h3>
+              <p className="text-muted-foreground mb-2">{t('details.date')}</p>
+              <p className="text-muted-foreground mb-2">{t('details.time')}</p>
+              <p className="text-sm text-muted-foreground">{t('details.location')}</p>
             </div>
 
             {/* Reception */}
@@ -97,10 +100,10 @@ const Index = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                 </svg>
               </div>
-              <h3 className="font-serif text-2xl font-semibold text-primary mb-4">Celebración</h3>
-              <p className="text-muted-foreground mb-2">Después de la ceremonia</p>
-              <p className="text-muted-foreground mb-2">¡Fiesta hasta el amanecer!</p>
-              <p className="text-sm text-muted-foreground">Música, baile y mucho amor</p>
+              <h3 className="font-serif text-2xl font-semibold text-primary mb-4">{t('details.celebration')}</h3>
+              <p className="text-muted-foreground mb-2">{t('details.afterCeremony')}</p>
+              <p className="text-muted-foreground mb-2">{t('details.partyUntilDawn')}</p>
+              <p className="text-sm text-muted-foreground">{t('details.musicDanceAndLove')}</p>
             </div>
           </div>
         </div>
@@ -112,7 +115,7 @@ const Index = () => {
           <FloralDivider />
           
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary mb-16 animate-bounce-in">
-            Ubicación de la Boda
+            {t('map.title')}
           </h2>
           
           <div 
@@ -128,7 +131,7 @@ const Index = () => {
             </div>
             <h3 className="font-serif text-3xl font-semibold text-primary mb-4">S'Olivaret</h3>
             <p className="text-lg text-muted-foreground mb-2">Mallorca, España</p>
-            <p className="text-sm text-muted-foreground">Haz clic para ver en Google Maps</p>
+            <p className="text-sm text-muted-foreground">{t('map.clickToView')}</p>
           </div>
           
           <FloralDivider />
@@ -139,11 +142,11 @@ const Index = () => {
       <section className="py-20 px-4 bg-gradient-earth">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary mb-8 animate-bounce-in">
-            Confirma tu Asistencia
+            {t('rsvp.title')}
           </h2>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto animate-bounce-in" style={{ animationDelay: '0.2s' }}>
-            Tu presencia es el regalo más valioso. Por favor, confirma tu asistencia completando el siguiente formulario.
+            {t('rsvp.description')}
           </p>
           
           <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-6 shadow-warm animate-bounce-in max-w-3xl mx-auto" style={{ animationDelay: '0.4s' }}>
@@ -165,7 +168,7 @@ const Index = () => {
           <FloralDivider />
           
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary text-center mb-16 animate-bounce-in">
-            Descubre Mallorca
+            {t('mallorca.title')}
           </h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -176,9 +179,9 @@ const Index = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
                 </svg>
               </div>
-              <h3 className="font-serif text-xl font-semibold text-primary mb-3 text-center">Playas Paradisíacas</h3>
+              <h3 className="font-serif text-xl font-semibold text-primary mb-3 text-center">{t('mallorca.beaches.title')}</h3>
               <p className="text-sm text-muted-foreground text-center">
-                Cala Mondragó, Es Trenc, Cala Figuera - aguas cristalinas y arena blanca te esperan.
+                {t('mallorca.beaches.description')}
               </p>
             </div>
 
@@ -189,9 +192,9 @@ const Index = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
-              <h3 className="font-serif text-xl font-semibold text-primary mb-3 text-center">Patrimonio Cultural</h3>
+              <h3 className="font-serif text-xl font-semibold text-primary mb-3 text-center">{t('mallorca.culture.title')}</h3>
               <p className="text-sm text-muted-foreground text-center">
-                Palma de Mallorca, Valldemossa, Deià - pueblos con encanto e historia milenaria.
+                {t('mallorca.culture.description')}
               </p>
             </div>
 
@@ -202,9 +205,9 @@ const Index = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
                 </svg>
               </div>
-              <h3 className="font-serif text-xl font-semibold text-primary mb-3 text-center">Gastronomía Local</h3>
+              <h3 className="font-serif text-xl font-semibold text-primary mb-3 text-center">{t('mallorca.gastronomy.title')}</h3>
               <p className="text-sm text-muted-foreground text-center">
-                Sobrasada, ensaimada, tumbet - sabores auténticos de la cocina mallorquina.
+                {t('mallorca.gastronomy.description')}
               </p>
             </div>
 
@@ -215,9 +218,9 @@ const Index = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                 </svg>
               </div>
-              <h3 className="font-serif text-xl font-semibold text-primary mb-3 text-center">Naturaleza Salvaje</h3>
+              <h3 className="font-serif text-xl font-semibold text-primary mb-3 text-center">{t('mallorca.nature.title')}</h3>
               <p className="text-sm text-muted-foreground text-center">
-                Serra de Tramuntana, Cuevas del Drach - paisajes únicos declarados Patrimonio Mundial.
+                {t('mallorca.nature.description')}
               </p>
             </div>
 
@@ -228,9 +231,9 @@ const Index = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="font-serif text-xl font-semibold text-primary mb-3 text-center">Aventuras</h3>
+              <h3 className="font-serif text-xl font-semibold text-primary mb-3 text-center">{t('mallorca.activities.title')}</h3>
               <p className="text-sm text-muted-foreground text-center">
-                Senderismo, ciclismo, deportes acuáticos - actividades para todos los gustos.
+                {t('mallorca.activities.description')}
               </p>
             </div>
 
@@ -241,16 +244,16 @@ const Index = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
-              <h3 className="font-serif text-xl font-semibold text-primary mb-3 text-center">Relax y Bienestar</h3>
+              <h3 className="font-serif text-xl font-semibold text-primary mb-3 text-center">{t('mallorca.relaxation.title')}</h3>
               <p className="text-sm text-muted-foreground text-center">
-                Spas, wellness, calas secretas - el lugar perfecto para desconectar y relajarse.
+                {t('mallorca.relaxation.description')}
               </p>
             </div>
           </div>
           
           <div className="text-center mt-12">
             <p className="text-lg text-muted-foreground animate-bounce-in" style={{ animationDelay: '1.4s' }}>
-              ¡Aprovecha tu estancia para explorar esta isla mágica! 🏝️
+              {t('mallorca.footer')}
             </p>
           </div>
           
@@ -262,10 +265,10 @@ const Index = () => {
       <footer className="py-16 px-4 bg-primary text-primary-foreground text-center">
         <div className="max-w-2xl mx-auto">
           <h3 className="font-serif text-3xl font-semibold mb-4 animate-bounce-in">
-            ¡Nos vemos pronto!
+            {t('footer.seeYouSoon')}
           </h3>
           <p className="text-lg mb-6 opacity-90 animate-bounce-in" style={{ animationDelay: '0.2s' }}>
-            Con mucho amor,
+            {t('footer.withLove')}
           </p>
           <p className="font-serif text-2xl font-semibold animate-bounce-in" style={{ animationDelay: '0.4s' }}>
             Pontus & Susana
@@ -274,7 +277,7 @@ const Index = () => {
           <FloralDivider className="mt-8" />
           
           <p className="text-sm opacity-70 mt-4">
-            {new Date().getFullYear()} • Hecho con ❤️ para celebrar nuestro amor
+            {new Date().getFullYear()} • {t('footer.madeWithLove')}
           </p>
         </div>
       </footer>
