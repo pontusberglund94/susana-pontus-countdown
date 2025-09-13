@@ -57,6 +57,12 @@ const translations = {
     'mallorca.relaxation.description': 'Spa, wellness, hemliga vikar - den perfekta platsen att koppla av och slappna av.',
     'mallorca.footer': 'Ta chansen att utforska denna magiska ö! 🏝️',
     
+    // Countdown
+    'countdown.days': 'Dagar',
+    'countdown.hours': 'Timmar', 
+    'countdown.minutes': 'Minuter',
+    'countdown.seconds': 'Sekunder',
+    
     // Footer
     'footer.seeYouSoon': 'Vi ses snart!',
     'footer.withLove': 'Med mycket kärlek,',
@@ -108,6 +114,12 @@ const translations = {
     'mallorca.relaxation.description': 'Spas, wellness, calas secretas - el lugar perfecto para desconectar y relajarse.',
     'mallorca.footer': '¡Aprovecha tu estancia para explorar esta isla mágica! 🏝️',
     
+    // Countdown
+    'countdown.days': 'Días',
+    'countdown.hours': 'Horas', 
+    'countdown.minutes': 'Minutos',
+    'countdown.seconds': 'Segundos',
+    
     // Footer
     'footer.seeYouSoon': '¡Nos vemos pronto!',
     'footer.withLove': 'Con mucho amor,',
@@ -158,6 +170,12 @@ const translations = {
     'mallorca.relaxation.title': 'Relaxation & Wellness',
     'mallorca.relaxation.description': 'Spas, wellness, secret coves - the perfect place to disconnect and relax.',
     'mallorca.footer': 'Take advantage of your stay to explore this magical island! 🏝️',
+    
+    // Countdown
+    'countdown.days': 'Days',
+    'countdown.hours': 'Hours', 
+    'countdown.minutes': 'Minutes',
+    'countdown.seconds': 'Seconds',
     
     // Footer
     'footer.seeYouSoon': 'See you soon!',

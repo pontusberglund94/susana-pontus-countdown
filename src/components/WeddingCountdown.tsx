@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface CountdownProps {
   targetDate: Date;
@@ -12,6 +13,7 @@ interface TimeLeft {
 }
 
 const WeddingCountdown = ({ targetDate }: CountdownProps) => {
+  const { t } = useLanguage();
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
     days: 0,
     hours: 0,
@@ -52,12 +54,12 @@ const WeddingCountdown = ({ targetDate }: CountdownProps) => {
 
   if (!mounted) {
     return (
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
+      <div className="grid grid-cols-4 gap-2 md:gap-4 lg:gap-8">
         {[...Array(4)].map((_, i) => (
           <div key={i} className="text-center animate-pulse">
-            <div className="bg-card/50 rounded-2xl p-6 lg:p-8 shadow-warm">
-              <div className="h-12 lg:h-16 bg-muted rounded mb-2"></div>
-              <div className="h-4 bg-muted rounded"></div>
+            <div className="bg-card/50 rounded-2xl p-3 md:p-6 lg:p-8 shadow-warm">
+              <div className="h-8 md:h-12 lg:h-16 bg-muted rounded mb-2"></div>
+              <div className="h-3 md:h-4 bg-muted rounded"></div>
             </div>
           </div>
         ))}
@@ -66,25 +68,25 @@ const WeddingCountdown = ({ targetDate }: CountdownProps) => {
   }
 
   const timeUnits = [
-    { value: timeLeft.days, label: 'Días', labelEn: 'Days' },
-    { value: timeLeft.hours, label: 'Horas', labelEn: 'Hours' },
-    { value: timeLeft.minutes, label: 'Minutos', labelEn: 'Minutes' },
-    { value: timeLeft.seconds, label: 'Segundos', labelEn: 'Seconds' },
+    { value: timeLeft.days, label: t('countdown.days'), key: 'days' },
+    { value: timeLeft.hours, label: t('countdown.hours'), key: 'hours' },
+    { value: timeLeft.minutes, label: t('countdown.minutes'), key: 'minutes' },
+    { value: timeLeft.seconds, label: t('countdown.seconds'), key: 'seconds' },
   ];
 
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
+    <div className="grid grid-cols-4 gap-2 md:gap-4 lg:gap-8">
       {timeUnits.map((unit, index) => (
         <div 
-          key={unit.labelEn}
+          key={unit.key}
           className="text-center animate-bounce-in"
           style={{ animationDelay: `${index * 0.1}s` }}
         >
-          <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 lg:p-8 shadow-warm border border-border/20 hover:shadow-soft transition-all duration-300 hover:scale-105">
-            <div className="text-4xl lg:text-6xl font-serif font-bold text-primary mb-2 animate-pulse-glow">
+          <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-3 md:p-6 lg:p-8 shadow-warm border border-border/20 hover:shadow-soft transition-all duration-300 hover:scale-105">
+            <div className="text-2xl md:text-4xl lg:text-6xl font-serif font-bold text-primary mb-2 animate-pulse-glow">
               {unit.value.toString().padStart(2, '0')}
             </div>
-            <div className="text-sm lg:text-base font-medium text-muted-foreground uppercase tracking-wider">
+            <div className="text-xs md:text-sm lg:text-base font-medium text-muted-foreground uppercase tracking-wider">
               {unit.label}
             </div>
           </div>
