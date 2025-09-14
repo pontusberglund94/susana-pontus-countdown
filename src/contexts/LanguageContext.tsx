@@ -22,16 +22,32 @@ const translations = {
     'story.subtitle': 'Två hjärtan som fann varandra och bestämde sig för att slå tillsammans för evigt.',
     'story.description': 'Sann kärlek har inget slut, och vår kärlek är beviset på att sagor verkligen finns. Vi inbjuder dig att fira med oss detta nya kapitel i våra liv.',
     
-    // Details
-    'details.title': 'Detaljer för Firandet',
+    // Details/Schedule
+    'details.title': 'Schema för Dagen',
     'details.ceremony': 'Ceremoni',
-    'details.date': '18 April, 2026',
-    'details.time': '17:00',
+    'details.aperitivo': 'Aperitivo',
+    'details.lunch': 'Lunch',
+    'details.party': 'Fest',
+    'details.lastDance': 'Sista dansen',
+    'details.ceremonyTime': '13:00',
+    'details.aperitivoTime': '14:00',
+    'details.lunchTime': '15:00-18:00',
+    'details.partyTime': '18:00-23:00',
+    'details.lastDanceTime': '22:00',
     'details.location': 'S\'Olivaret, Mallorca',
-    'details.celebration': 'Firande',
-    'details.afterCeremony': 'Efter ceremonin',
-    'details.partyUntilDawn': 'Fest till gryningen!',
-    'details.musicDanceAndLove': 'Musik, dans och mycket kärlek',
+    
+    // Accommodation
+    'accommodation.title': 'Boende',
+    'accommodation.description': 'Vi har arrangerat boende på ett underbart hotell nära bröllopslokalen.',
+    'accommodation.discountCode': 'Rabattkod tillgänglig',
+    'accommodation.singleNight': 'För boende endast en natt, kontakta brudparet så pratar vi med hotellet.',
+    'accommodation.visitWebsite': 'Besök hemsidan',
+    
+    // Transportation
+    'transportation.title': 'Transport',
+    'transportation.bus': 'Buss till Palma',
+    'transportation.busDescription': 'En buss kommer att köra från festlokalen till Palma vid festens slut.',
+    'transportation.busTime': 'Avgång vid 23:30',
     
     // Map
     'map.title': 'Bröllopets Plats',
@@ -79,16 +95,32 @@ const translations = {
     'story.subtitle': 'Dos corazones que se encontraron y decidieron latir juntos para siempre.',
     'story.description': 'El amor verdadero no tiene fin, y el nuestro es la prueba de que los cuentos de hadas sí existen. Te invitamos a celebrar con nosotros este nuevo capítulo de nuestras vidas.',
     
-    // Details
-    'details.title': 'Detalles de la Celebración',
+    // Details/Schedule
+    'details.title': 'Programa del Día',
     'details.ceremony': 'Ceremonia',
-    'details.date': '18 de Abril, 2026',
-    'details.time': '17:00 hrs',
+    'details.aperitivo': 'Aperitivo',
+    'details.lunch': 'Almuerzo',
+    'details.party': 'Fiesta',
+    'details.lastDance': 'Último baile',
+    'details.ceremonyTime': '13:00',
+    'details.aperitivoTime': '14:00',
+    'details.lunchTime': '15:00-18:00',
+    'details.partyTime': '18:00-23:00',
+    'details.lastDanceTime': '22:00',
     'details.location': 'S\'Olivaret, Mallorca',
-    'details.celebration': 'Celebración',
-    'details.afterCeremony': 'Después de la ceremonia',
-    'details.partyUntilDawn': '¡Fiesta hasta el amanecer!',
-    'details.musicDanceAndLove': 'Música, baile y mucho amor',
+    
+    // Accommodation
+    'accommodation.title': 'Alojamiento',
+    'accommodation.description': 'Hemos organizado alojamiento en un hotel maravilloso cerca del lugar de la boda.',
+    'accommodation.discountCode': 'Código de descuento disponible',
+    'accommodation.singleNight': 'Para alojamiento de una sola noche, contacta con los novios y hablaremos con el hotel.',
+    'accommodation.visitWebsite': 'Visitar web',
+    
+    // Transportation
+    'transportation.title': 'Transporte',
+    'transportation.bus': 'Autobús a Palma',
+    'transportation.busDescription': 'Un autobús saldrá desde el lugar de la fiesta hacia Palma al final de la celebración.',
+    'transportation.busTime': 'Salida a las 23:30',
     
     // Map
     'map.title': 'Ubicación de la Boda',
@@ -136,16 +168,32 @@ const translations = {
     'story.subtitle': 'Two hearts that found each other and decided to beat together forever.',
     'story.description': 'True love has no end, and ours is proof that fairy tales do exist. We invite you to celebrate with us this new chapter in our lives.',
     
-    // Details
-    'details.title': 'Celebration Details',
+    // Details/Schedule
+    'details.title': 'Day Schedule',
     'details.ceremony': 'Ceremony',
-    'details.date': 'April 18th, 2026',
-    'details.time': '5:00 PM',
+    'details.aperitivo': 'Aperitivo',
+    'details.lunch': 'Lunch',
+    'details.party': 'Party',
+    'details.lastDance': 'Last Dance',
+    'details.ceremonyTime': '1:00 PM',
+    'details.aperitivoTime': '2:00 PM',
+    'details.lunchTime': '3:00-6:00 PM',
+    'details.partyTime': '6:00-11:00 PM',
+    'details.lastDanceTime': '10:00 PM',
     'details.location': 'S\'Olivaret, Mallorca',
-    'details.celebration': 'Celebration',
-    'details.afterCeremony': 'After the ceremony',
-    'details.partyUntilDawn': 'Party until dawn!',
-    'details.musicDanceAndLove': 'Music, dancing and lots of love',
+    
+    // Accommodation
+    'accommodation.title': 'Accommodation',
+    'accommodation.description': 'We have arranged accommodation at a wonderful hotel near the wedding venue.',
+    'accommodation.discountCode': 'Discount code available',
+    'accommodation.singleNight': 'For single night stays, contact the couple and we will speak with the hotel.',
+    'accommodation.visitWebsite': 'Visit website',
+    
+    // Transportation
+    'transportation.title': 'Transportation',
+    'transportation.bus': 'Bus to Palma',
+    'transportation.busDescription': 'A bus will depart from the party venue to Palma at the end of the celebration.',
+    'transportation.busTime': 'Departure at 11:30 PM',
     
     // Map
     'map.title': 'Wedding Location',
