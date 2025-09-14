@@ -23,25 +23,15 @@ const translations = {
     'story.description': 'Sann kärlek har inget slut, och vår kärlek är beviset på att sagor verkligen finns. Vi inbjuder dig att fira med oss detta nya kapitel i våra liv.',
     
     // Details
-    'details.title': 'Schema för Firandet',
-    'details.ceremony': 'Ceremoni 13:00',
-    'details.aperitivo': 'Aperitivo 14:00',
-    'details.lunch': 'Lunch 15:00-18:00',
-    'details.party': 'Fest 18:00-23:00',
-    'details.sendoff': 'Vickning 22:00',
+    'details.title': 'Detaljer för Firandet',
+    'details.ceremony': 'Ceremoni',
     'details.date': '18 April, 2026',
+    'details.time': '17:00',
     'details.location': 'S\'Olivaret, Mallorca',
-    
-    // Accommodation
-    'accommodation.title': 'Boende',
-    'accommodation.description': 'Information om boendet med länk till hemsidan. Det kommer finnas en rabattkod.',
-    'accommodation.oneNight': 'Om du vill bo endast en natt kan du kontakta brudparet så pratar vi med hotellet.',
-    'accommodation.contact': 'Kontakta oss för mer information',
-    
-    // Transportation
-    'transport.title': 'Transport',
-    'transport.bus': 'Buss till Palma',
-    'transport.description': 'Det kommer finnas en buss vid festens slut som tar dig till Palma.',
+    'details.celebration': 'Firande',
+    'details.afterCeremony': 'Efter ceremonin',
+    'details.partyUntilDawn': 'Fest till gryningen!',
+    'details.musicDanceAndLove': 'Musik, dans och mycket kärlek',
     
     // Map
     'map.title': 'Bröllopets Plats',
@@ -50,8 +40,6 @@ const translations = {
     // RSVP
     'rsvp.title': 'Bekräfta din Närvaro',
     'rsvp.description': 'Din närvaro är den mest värdefulla gåvan. Vänligen bekräfta din närvaro genom att fylla i följande formulär.',
-    'rsvp.contactDirectly': 'För att bekräfta din närvaro, vänligen kontakta oss direkt.',
-    'rsvp.workingOnForm': 'Vi arbetar med ett enklare formulär. Under tiden kan du bekräfta din närvaro genom att kontakta oss.',
     
     // Mallorca Info
     'mallorca.title': 'Upptäck Mallorca',
@@ -92,25 +80,15 @@ const translations = {
     'story.description': 'El amor verdadero no tiene fin, y el nuestro es la prueba de que los cuentos de hadas sí existen. Te invitamos a celebrar con nosotros este nuevo capítulo de nuestras vidas.',
     
     // Details
-    'details.title': 'Programa de la Celebración',
-    'details.ceremony': 'Ceremonia 13:00',
-    'details.aperitivo': 'Aperitivo 14:00',
-    'details.lunch': 'Almuerzo 15:00-18:00',
-    'details.party': 'Fiesta 18:00-23:00',
-    'details.sendoff': 'Despedida 22:00',
+    'details.title': 'Detalles de la Celebración',
+    'details.ceremony': 'Ceremonia',
     'details.date': '18 de Abril, 2026',
+    'details.time': '17:00 hrs',
     'details.location': 'S\'Olivaret, Mallorca',
-    
-    // Accommodation
-    'accommodation.title': 'Alojamiento',
-    'accommodation.description': 'Información sobre el alojamiento con enlace a su página web. Habrá un código de descuento.',
-    'accommodation.oneNight': 'Si quieres quedarte solo una noche puedes contactar a la pareja y hablaremos con el hotel.',
-    'accommodation.contact': 'Contáctanos para más información',
-    
-    // Transportation
-    'transport.title': 'Transporte',
-    'transport.bus': 'Autobús a Palma',
-    'transport.description': 'Habrá un autobús al final de la fiesta que te llevará a Palma.',
+    'details.celebration': 'Celebración',
+    'details.afterCeremony': 'Después de la ceremonia',
+    'details.partyUntilDawn': '¡Fiesta hasta el amanecer!',
+    'details.musicDanceAndLove': 'Música, baile y mucho amor',
     
     // Map
     'map.title': 'Ubicación de la Boda',
@@ -119,8 +97,6 @@ const translations = {
     // RSVP
     'rsvp.title': 'Confirma tu Asistencia',
     'rsvp.description': 'Tu presencia es el regalo más valioso. Por favor, confirma tu asistencia completando el siguiente formulario.',
-    'rsvp.contactDirectly': 'Para confirmar tu asistencia, por favor contáctanos directamente.',
-    'rsvp.workingOnForm': 'Estamos trabajando en un formulario más fácil de usar. Mientras tanto, puedes confirmar tu asistencia contactándonos.',
     
     // Mallorca Info
     'mallorca.title': 'Descubre Mallorca',
@@ -161,25 +137,15 @@ const translations = {
     'story.description': 'True love has no end, and ours is proof that fairy tales do exist. We invite you to celebrate with us this new chapter in our lives.',
     
     // Details
-    'details.title': 'Celebration Schedule',
-    'details.ceremony': 'Ceremony 1:00 PM',
-    'details.aperitivo': 'Aperitivo 2:00 PM',
-    'details.lunch': 'Lunch 3:00-6:00 PM',
-    'details.party': 'Party 6:00-11:00 PM',
-    'details.sendoff': 'Send-off 10:00 PM',
+    'details.title': 'Celebration Details',
+    'details.ceremony': 'Ceremony',
     'details.date': 'April 18th, 2026',
+    'details.time': '5:00 PM',
     'details.location': 'S\'Olivaret, Mallorca',
-    
-    // Accommodation
-    'accommodation.title': 'Accommodation',
-    'accommodation.description': 'Information about accommodation with link to their website. There will be a discount code.',
-    'accommodation.oneNight': 'If you want to stay only one night, you can contact the couple and we\'ll talk to the hotel.',
-    'accommodation.contact': 'Contact us for more information',
-    
-    // Transportation
-    'transport.title': 'Transportation',
-    'transport.bus': 'Bus to Palma',
-    'transport.description': 'There will be a bus at the end of the party that will take you to Palma.',
+    'details.celebration': 'Celebration',
+    'details.afterCeremony': 'After the ceremony',
+    'details.partyUntilDawn': 'Party until dawn!',
+    'details.musicDanceAndLove': 'Music, dancing and lots of love',
     
     // Map
     'map.title': 'Wedding Location',
@@ -188,8 +154,6 @@ const translations = {
     // RSVP
     'rsvp.title': 'Confirm Your Attendance',
     'rsvp.description': 'Your presence is the most valuable gift. Please confirm your attendance by completing the following form.',
-    'rsvp.contactDirectly': 'To confirm your attendance, please contact us directly.',
-    'rsvp.workingOnForm': 'We are working on an easier-to-use form. In the meantime, you can confirm your attendance by contacting us.',
     
     // Mallorca Info
     'mallorca.title': 'Discover Mallorca',
