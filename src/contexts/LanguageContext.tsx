@@ -50,6 +50,8 @@ const translations = {
     // RSVP
     'rsvp.title': 'Bekräfta din Närvaro',
     'rsvp.description': 'Din närvaro är den mest värdefulla gåvan. Vänligen bekräfta din närvaro genom att fylla i följande formulär.',
+    'rsvp.contactDirectly': 'För att bekräfta din närvaro, vänligen kontakta oss direkt.',
+    'rsvp.workingOnForm': 'Vi arbetar med ett enklare formulär. Under tiden kan du bekräfta din närvaro genom att kontakta oss.',
     
     // Mallorca Info
     'mallorca.title': 'Upptäck Mallorca',
@@ -117,6 +119,8 @@ const translations = {
     // RSVP
     'rsvp.title': 'Confirma tu Asistencia',
     'rsvp.description': 'Tu presencia es el regalo más valioso. Por favor, confirma tu asistencia completando el siguiente formulario.',
+    'rsvp.contactDirectly': 'Para confirmar tu asistencia, por favor contáctanos directamente.',
+    'rsvp.workingOnForm': 'Estamos trabajando en un formulario más fácil de usar. Mientras tanto, puedes confirmar tu asistencia contactándonos.',
     
     // Mallorca Info
     'mallorca.title': 'Descubre Mallorca',
@@ -184,6 +188,8 @@ const translations = {
     // RSVP
     'rsvp.title': 'Confirm Your Attendance',
     'rsvp.description': 'Your presence is the most valuable gift. Please confirm your attendance by completing the following form.',
+    'rsvp.contactDirectly': 'To confirm your attendance, please contact us directly.',
+    'rsvp.workingOnForm': 'We are working on an easier-to-use form. In the meantime, you can confirm your attendance by contacting us.',
     
     // Mallorca Info
     'mallorca.title': 'Discover Mallorca',

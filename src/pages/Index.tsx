@@ -237,10 +237,10 @@ const Index = () => {
                 </svg>
               </div>
               <p className="text-lg text-muted-foreground mb-6">
-                Para confirmar tu asistencia, por favor contáctanos directamente.
+                {t('rsvp.contactDirectly')}
               </p>
               <p className="text-md text-muted-foreground">
-                Estamos trabajando en un formulario más fácil de usar. Mientras tanto, puedes confirmar tu asistencia contactándonos.
+                {t('rsvp.workingOnForm')}
               </p>
             </div>
           </div>
