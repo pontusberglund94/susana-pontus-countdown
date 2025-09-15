@@ -12,6 +12,15 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 const translations = {
   sv: {
+    // Navigation
+    'nav.home': 'Hem', 
+    'nav.story': 'Vår Historia',
+    'nav.schedule': 'Schema',
+    'nav.location': 'Plats',
+    'nav.accommodation': 'Boende',
+    'nav.rsvp': 'OSA',
+    'nav.photos': 'Foton',
+    
     // Hero Section
     'hero.weAreGettingMarried': 'Vi Gifter Oss',
     'hero.date': '18 April, 2026',
@@ -85,6 +94,15 @@ const translations = {
     'footer.madeWithLove': 'Gjord med ❤️ för att fira vår kärlek',
   },
   es: {
+    // Navigation
+    'nav.home': 'Inicio',
+    'nav.story': 'Nuestra Historia', 
+    'nav.schedule': 'Programa',
+    'nav.location': 'Ubicación',
+    'nav.accommodation': 'Alojamiento',
+    'nav.rsvp': 'Confirmar',
+    'nav.photos': 'Fotos',
+    
     // Hero Section
     'hero.weAreGettingMarried': 'Nos Casamos',
     'hero.date': '18 de Abril, 2026',
@@ -158,6 +176,15 @@ const translations = {
     'footer.madeWithLove': 'Hecho con ❤️ para celebrar nuestro amor',
   },
   en: {
+    // Navigation
+    'nav.home': 'Home',
+    'nav.story': 'Our Story',
+    'nav.schedule': 'Schedule', 
+    'nav.location': 'Location',
+    'nav.accommodation': 'Stay',
+    'nav.rsvp': 'RSVP',
+    'nav.photos': 'Photos',
+    
     // Hero Section
     'hero.weAreGettingMarried': 'We Are Getting Married',
     'hero.date': 'April 18th, 2026',

@@ -1,8 +1,12 @@
 import WeddingCountdown from '@/components/WeddingCountdown';
 import FloralDivider from '@/components/FloralDivider';
 import LanguageToggle from '@/components/LanguageToggle';
+import Navigation from '@/components/Navigation';
 import { useLanguage } from '@/contexts/LanguageContext';
 import heroImage from '@/assets/wedding-hero.jpg';
+import couplePortrait from '@/assets/couple-portrait-1.jpg';
+import coupleDancing from '@/assets/couple-dancing.jpg';
+import coupleBeachWalk from '@/assets/couple-beach-walk.jpg';
 
 const Index = () => {
   const { t } = useLanguage();
@@ -11,9 +15,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Navigation />
       <LanguageToggle />
       {/* Hero Section */}
       <section 
+        id="hero"
         className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
         style={{ 
           backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(${heroImage})`,
@@ -51,7 +57,7 @@ const Index = () => {
       </section>
 
       {/* Love Story Section */}
-      <section className="py-20 px-4 bg-cream/30">
+      <section id="story" className="py-20 px-4 bg-cream/30">
         <div className="max-w-4xl mx-auto text-center">
           <FloralDivider />
           
@@ -68,12 +74,30 @@ const Index = () => {
             </p>
           </div>
           
+          {/* Couple photos */}
+          <div className="grid md:grid-cols-2 gap-8 mt-12 max-w-4xl mx-auto">
+            <div className="animate-bounce-in" style={{ animationDelay: '0.6s' }}>
+              <img 
+                src={couplePortrait} 
+                alt="Couple portrait"
+                className="w-full h-80 object-cover rounded-3xl shadow-warm"
+              />
+            </div>
+            <div className="animate-bounce-in" style={{ animationDelay: '0.8s' }}>
+              <img 
+                src={coupleDancing} 
+                alt="Couple dancing"
+                className="w-full h-80 object-cover rounded-3xl shadow-warm"
+              />
+            </div>
+          </div>
+          
           <FloralDivider />
         </div>
       </section>
 
       {/* Schedule Section */}
-      <section className="py-20 px-4 bg-gradient-earth">
+      <section id="schedule" className="py-20 px-4 bg-gradient-earth">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary text-center mb-16 animate-bounce-in">
             {t('details.title')}
@@ -140,7 +164,7 @@ const Index = () => {
       </section>
 
       {/* Accommodation Section */}
-      <section className="py-20 px-4 bg-cream/30">
+      <section id="accommodation" className="py-20 px-4 bg-cream/30">
         <div className="max-w-4xl mx-auto text-center">
           <FloralDivider />
           
@@ -208,7 +232,7 @@ const Index = () => {
       </section>
 
       {/* Map Section */}
-      <section className="py-20 px-4 bg-cream/30">
+      <section id="location" className="py-20 px-4 bg-cream/30">
         <div className="max-w-4xl mx-auto text-center">
           <FloralDivider />
           
@@ -237,7 +261,7 @@ const Index = () => {
       </section>
 
       {/* RSVP Section */}
-      <section className="py-20 px-4 bg-gradient-earth">
+      <section id="rsvp" className="py-20 px-4 bg-gradient-earth">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary mb-8 animate-bounce-in">
             {t('rsvp.title')}
@@ -353,6 +377,43 @@ const Index = () => {
             <p className="text-lg text-muted-foreground animate-bounce-in" style={{ animationDelay: '1.4s' }}>
               {t('mallorca.footer')}
             </p>
+          </div>
+          
+          <FloralDivider />
+        </div>
+      </section>
+
+      {/* Photos Section */}
+      <section id="photos" className="py-20 px-4 bg-cream/30">
+        <div className="max-w-6xl mx-auto text-center">
+          <FloralDivider />
+          
+          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary mb-16 animate-bounce-in">
+            {t('nav.photos')}
+          </h2>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="animate-bounce-in" style={{ animationDelay: '0.2s' }}>
+              <img 
+                src={coupleBeachWalk} 
+                alt="Couple beach walk"
+                className="w-full h-64 object-cover rounded-3xl shadow-warm hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="animate-bounce-in" style={{ animationDelay: '0.4s' }}>
+              <img 
+                src={couplePortrait} 
+                alt="Couple portrait"
+                className="w-full h-64 object-cover rounded-3xl shadow-warm hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="animate-bounce-in" style={{ animationDelay: '0.6s' }}>
+              <img 
+                src={coupleDancing} 
+                alt="Couple dancing"
+                className="w-full h-64 object-cover rounded-3xl shadow-warm hover:scale-105 transition-transform duration-300"
+              />
+            </div>
           </div>
           
           <FloralDivider />
