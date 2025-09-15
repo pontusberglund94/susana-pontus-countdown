@@ -29,7 +29,7 @@ const Navigation = () => {
   return (
     <>
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex fixed top-6 left-6 z-50 bg-card/80 backdrop-blur-sm rounded-full p-2 shadow-warm">
+      <nav className="hidden md:flex fixed top-4 left-4 z-50 bg-card/80 backdrop-blur-sm rounded-full p-2 shadow-warm">
         <div className="flex items-center space-x-1">
           {navigationItems.map((item) => {
             const Icon = item.icon;
@@ -50,7 +50,7 @@ const Navigation = () => {
       </nav>
 
       {/* Mobile Navigation */}
-      <div className="md:hidden fixed top-6 left-6 z-50">
+      <div className="md:hidden fixed top-4 left-4 z-50">
         <Button
           variant="outline"
           size="sm"
