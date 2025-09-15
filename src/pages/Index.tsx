@@ -260,30 +260,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* RSVP Section */}
-      <section id="rsvp" className="py-20 px-4 bg-gradient-earth">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary mb-8 animate-bounce-in">
-            {t('rsvp.title')}
-          </h2>
-          
-          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto animate-bounce-in" style={{ animationDelay: '0.2s' }}>
-            {t('rsvp.description')}
-          </p>
-          
-          <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-6 shadow-warm animate-bounce-in max-w-3xl mx-auto" style={{ animationDelay: '0.4s' }}>
-            <iframe 
-              src="https://docs.google.com/forms/d/e/1FAIpQLSeMUUMnSxykSv_W1J_VK7Me-d4E7Ydgp27B6Xx_uAuQtLJcnQ/viewform?embedded=true" 
-              className="w-full h-[600px] md:h-[800px] border-0 rounded-xl"
-              loading="lazy"
-              title="Formulario de Confirmación RSVP"
-            >
-              Cargando formulario...
-            </iframe>
-          </div>
-        </div>
-      </section>
-
       {/* Mallorca Info Section */}
       <section className="py-20 px-4 bg-cream/30">
         <div className="max-w-6xl mx-auto">
@@ -417,6 +393,30 @@ const Index = () => {
           </div>
           
           <FloralDivider />
+        </div>
+      </section>
+
+      {/* RSVP Section */}
+      <section id="rsvp" className="py-20 px-4 bg-gradient-earth">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary mb-8 animate-bounce-in">
+            {t('rsvp.title')}
+          </h2>
+          
+          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto animate-bounce-in" style={{ animationDelay: '0.2s' }}>
+            {t('rsvp.description')}
+          </p>
+          
+          <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-6 shadow-warm animate-bounce-in max-w-3xl mx-auto" style={{ animationDelay: '0.4s' }}>
+            <iframe 
+              src="https://docs.google.com/forms/d/e/1FAIpQLSeMUUMnSxykSv_W1J_VK7Me-d4E7Ydgp27B6Xx_uAuQtLJcnQ/viewform?embedded=true" 
+              className="w-full h-[600px] md:h-[800px] border-0 rounded-xl"
+              loading="lazy"
+              title="Formulario de Confirmación RSVP"
+            >
+              Cargando formulario...
+            </iframe>
+          </div>
         </div>
       </section>
 
