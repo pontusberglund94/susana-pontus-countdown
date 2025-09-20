@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   // Set base path for GitHub Pages
-  base: process.env.NODE_ENV === 'production' ? '/susana-pontus-countdown/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/pontusberglund94.github.io/' : '/',
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
