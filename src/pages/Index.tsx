@@ -9,9 +9,12 @@ import coupleDancing from '@/assets/couple-dancing.jpg';
 import coupleBeachWalk from '@/assets/couple-beach-walk.jpg';
 
 const Index = () => {
+  console.log('Index component loading...');
   const { t } = useLanguage();
+  console.log('Language context loaded, current language function:', typeof t);
   // Wedding date: April 18, 2026
   const weddingDate = new Date('2026-04-18T17:00:00');
+  console.log('About to render Index page...');
 
   return (
     <div className="min-h-screen bg-background">
