@@ -15,7 +15,7 @@ const App = () => (
       <LanguageProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter basename={import.meta.env.DEV ? "/" : "/susana-pontus-countdown"}>
+        <BrowserRouter basename="/">
           <Routes>
             <Route path="/" element={<Index />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
