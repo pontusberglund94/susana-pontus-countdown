@@ -32,17 +32,19 @@ const translations = {
     'story.description': 'Sann kärlek har inget slut, och vår kärlek är beviset på att sagor verkligen finns. Vi inbjuder dig att fira med oss detta nya kapitel i våra liv.',
     
     // Details/Schedule
-    'details.title': 'Schema för Dagen',
+    'details.title': 'Schema',
+    'details.welcomedrink': 'Välkomstdrink',
     'details.ceremony': 'Ceremoni',
-    'details.aperitivo': 'Aperitivo',
+    'details.aperitivo': 'Aperitivo & Förrätt',
     'details.lunch': 'Lunch',
     'details.party': 'Fest',
-    'details.lastDance': 'Sista dansen',
-    'details.ceremonyTime': '13:00',
-    'details.aperitivoTime': '14:00',
-    'details.lunchTime': '15:00-18:00',
-    'details.partyTime': '18:00-23:00',
-    'details.lastDanceTime': '22:00',
+    'details.lastDance': 'Vickning',
+    'details.welcomedrinkTime': '13:00',
+    'details.ceremonyTime': '13:30',
+    'details.aperitivoTime': '14:30',
+    'details.lunchTime': '16:00',
+    'details.partyTime': '18:00',
+    'details.lastDanceTime': '21:00',
     'details.location': 'S\'Olivaret, Mallorca',
     
     // Accommodation
