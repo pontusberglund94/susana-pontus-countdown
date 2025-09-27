@@ -11,7 +11,7 @@ import coupleBeachWalk from '@/assets/couple-beach-walk.jpg';
 const Index = () => {
   const { t } = useLanguage();
   // Wedding date: April 18, 2026
-  const weddingDate = new Date('2026-04-18T17:00:00');
+  const weddingDate = new Date('2026-04-18T13:00:00');
 
   return (
     <div className="min-h-screen bg-background">
