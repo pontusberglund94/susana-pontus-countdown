@@ -192,7 +192,7 @@ const Index = () => {
               </div>
               <button 
                 className="bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:bg-primary/90 transition-colors"
-                onClick={() => window.open('#', '_blank')}
+                onClick={() => window.open('https://www.solivaret.com/', '_blank')}
               >
                 {t('accommodation.visitWebsite')}
               </button>
