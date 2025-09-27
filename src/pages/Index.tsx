@@ -32,9 +32,6 @@ const Index = () => {
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-4 drop-shadow-lg">
               Pontus <span className="text-gold">&</span> Susana
             </h1>
-            /*<p className="text-xl md:text-2xl text-cream mb-2 font-light tracking-wide">
-              {t('hero.weAreGettingMarried')}
-            </p>*/
             <p className="text-lg md:text-xl text-cream/90 mb-12 font-light">
               {t('hero.date')}
             </p>
@@ -60,19 +57,6 @@ const Index = () => {
       <section id="story" className="py-20 px-4 bg-cream/30">
         <div className="max-w-4xl mx-auto text-center">
           <FloralDivider />
-          
-          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary mb-8 animate-bounce-in">
-            {t('story.title')}
-          </h2>
-          
-          <div className="prose prose-lg max-w-3xl mx-auto text-foreground/80 leading-relaxed">
-            <p className="text-lg md:text-xl mb-6 font-light animate-bounce-in" style={{ animationDelay: '0.2s' }}>
-              {t('story.subtitle')}
-            </p>
-            <p className="text-base md:text-lg animate-bounce-in" style={{ animationDelay: '0.4s' }}>
-              {t('story.description')}
-            </p>
-          </div>
           
           {/* Couple photos */}
           <div className="grid md:grid-cols-2 gap-8 mt-12 max-w-4xl mx-auto">
