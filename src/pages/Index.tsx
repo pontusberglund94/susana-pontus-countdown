@@ -81,7 +81,7 @@ const Index = () => {
       </section>
 
       {/* Love Story Section NY MED SLIDESHOW */}
-      <section id="story" className="py-20 px-4 bg-cream/30">
+      <section id="story2" className="py-20 px-4 bg-cream/30">
         <div className="max-w-4xl mx-auto text-center">
           <FloralDivider />
           
