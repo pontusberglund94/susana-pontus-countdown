@@ -32,7 +32,7 @@ const Index = () => {
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-4 drop-shadow-lg">
               Pontus <span className="text-gold">&</span> Susana
             </h1>
-            <p className="text-lg md:text-3xl text-cream/90 mb-12 font-light">
+            <p className="text-2xl md:text-3xl text-cream/90 mb-12 font-light">
               {t('hero.date')}
             </p>
           </div>
@@ -79,6 +79,19 @@ const Index = () => {
           <FloralDivider />
         </div>
       </section>
+
+      {/* Love Story Section NY MED SLIDESHOW */}
+      <section id="story" className="py-20 px-4 bg-cream/30">
+        <div className="max-w-4xl mx-auto text-center">
+          <FloralDivider />
+          
+          {/* Couple photos carousel */}
+          <PhotoCarousel images={[couplePortrait, coupleDancing]} />
+          
+          <FloralDivider />
+        </div>
+      </section>
+      
 
       {/* Schedule Section */}
       <section id="schedule" className="py-20 px-4 bg-gradient-earth">
