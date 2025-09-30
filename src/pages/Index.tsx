@@ -80,17 +80,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Love Story Section NY MED SLIDESHOW */}
-      <section id="story2" className="py-20 px-4 bg-cream/30">
-        <div className="max-w-4xl mx-auto text-center">
-          <FloralDivider />
-          
-          {/* Couple photos carousel */}
-          <PhotoCarousel images={[couplePortrait, coupleDancing]} />
-          
-          <FloralDivider />
-        </div>
-      </section>
+    
       
 
       {/* Schedule Section */}
