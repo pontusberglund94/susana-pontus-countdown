@@ -8,114 +8,8 @@ import couplePortrait from '@/assets/couple-portrait-1.jpg';
 import coupleDancing from '@/assets/couple-dancing.jpg';
 import coupleBeachWalk from '@/assets/couple-beach-walk.jpg';
 
-//Från Claude
-import { Calendar, MapPin, Clock, Heart, Menu, X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 
-//Till fotokarusellen
-// Add this BEFORE your main WeddingWebsite component
-const PhotoCarousel = ({ images }: { images: string[] }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [touchStart, setTouchStart] = useState(0);
-  const [touchEnd, setTouchEnd] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
-
-  // Auto-advance slideshow every 5 seconds
-  useEffect(() => {
-    if (!isPaused) {
-      const interval = setInterval(() => {
-        setCurrentIndex((prev) => (prev + 1) % images.length);
-      }, 5000);
-      return () => clearInterval(interval);
-    }
-  }, [images.length, isPaused]);
-
-  const goToNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % images.length);
-  };
-
-  const goToPrev = () => {
-    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
-  };
-
-  const handleTouchStart = (e: React.TouchEvent) => {
-    setTouchStart(e.targetTouches[0].clientX);
-  };
-
-  const handleTouchMove = (e: React.TouchEvent) => {
-    setTouchEnd(e.targetTouches[0].clientX);
-  };
-
-  const handleTouchEnd = () => {
-    if (touchStart - touchEnd > 75) {
-      goToNext();
-    }
-    if (touchStart - touchEnd < -75) {
-      goToPrev();
-    }
-  };
-
-  return (
-    <div 
-      className="relative mt-12 max-w-4xl mx-auto"
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
-    >
-      {/* Main image container */}
-      <div 
-        className="relative overflow-hidden rounded-3xl shadow-warm"
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-        onTouchEnd={handleTouchEnd}
-      >
-        <div 
-          className="flex transition-transform duration-500 ease-out"
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-        >
-          {images.map((img, idx) => (
-            <img
-              key={idx}
-              src={img}
-              alt={`Couple photo ${idx + 1}`}
-              className="w-full h-96 object-cover flex-shrink-0"
-            />
-          ))}
-        </div>
-      </div>
-
-      {/* Navigation arrows */}
-      <button
-        onClick={goToPrev}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all hover:scale-110"
-        aria-label="Previous image"
-      >
-        <ChevronLeft className="w-6 h-6 text-sage" />
-      </button>
-      <button
-        onClick={goToNext}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all hover:scale-110"
-        aria-label="Next image"
-      >
-        <ChevronRight className="w-6 h-6 text-sage" />
-      </button>
-
-      {/* Dots indicator */}
-      <div className="flex justify-center gap-2 mt-6">
-        {images.map((_, idx) => (
-          <button
-            key={idx}
-            onClick={() => setCurrentIndex(idx)}
-            className={`w-2 h-2 rounded-full transition-all ${
-              idx === currentIndex ? 'bg-sage w-8' : 'bg-sage/30'
-            }`}
-            aria-label={`Go to image ${idx + 1}`}
-          />
-        ))}
-      </div>
-    </div>
-  );
-};
-
-//Ovan kom från Claude
 
 const Index = () => {
   const { t } = useLanguage();
@@ -190,13 +84,40 @@ const Index = () => {
         </div>
       </section>
 
-            {/* Love Story Section */}
+       {/* Karusell Story Section */}
       <section id="story2" className="py-20 px-4 bg-cream/30">
         <div className="max-w-4xl mx-auto text-center">
           <FloralDivider />
           
           {/* Couple photos carousel */}
-          <PhotoCarousel images={[couplePortrait, coupleDancing]} />
+          <div className="mt-12 max-w-3xl mx-auto">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                <CarouselItem>
+                  <img 
+                    src={couplePortrait} 
+                    alt="Couple portrait"
+                    className="w-full h-96 object-cover rounded-3xl shadow-warm"
+                  />
+                </CarouselItem>
+                <CarouselItem>
+                  <img 
+                    src={coupleDancing} 
+                    alt="Couple dancing"
+                    className="w-full h-96 object-cover rounded-3xl shadow-warm"
+                  />
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
+            </Carousel>
+          </div>
           
           <FloralDivider />
         </div>
