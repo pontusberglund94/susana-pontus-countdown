@@ -32,7 +32,7 @@ const Index = () => {
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-4 drop-shadow-lg">
               Pontus <span className="text-gold">&</span> Susana
             </h1>
-            <p className="text-lg md:text-xl text-cream/90 mb-12 font-light">
+            <p className="text-lg md:text-3xl text-cream/90 mb-12 font-light">
               {t('hero.date')}
             </p>
           </div>
