@@ -53,28 +53,14 @@ const Index = () => {
         </div>
       </section>
 
+
       {/* Love Story Section */}
       <section id="story" className="py-20 px-4 bg-cream/30">
         <div className="max-w-4xl mx-auto text-center">
           <FloralDivider />
           
-          {/* Couple photos */}
-          <div className="grid md:grid-cols-2 gap-8 mt-12 max-w-4xl mx-auto">
-            <div className="animate-bounce-in" style={{ animationDelay: '0.6s' }}>
-              <img 
-                src={couplePortrait} 
-                alt="Couple portrait"
-                className="w-full h-80 object-cover rounded-3xl shadow-warm"
-              />
-            </div>
-            <div className="animate-bounce-in" style={{ animationDelay: '0.8s' }}>
-              <img 
-                src={coupleDancing} 
-                alt="Couple dancing"
-                className="w-full h-80 object-cover rounded-3xl shadow-warm"
-              />
-            </div>
-          </div>
+          {/* Couple photos carousel */}
+          <PhotoCarousel images={[couplePortrait, coupleDancing]} />
           
           <FloralDivider />
         </div>
