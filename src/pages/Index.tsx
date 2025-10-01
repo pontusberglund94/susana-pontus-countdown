@@ -7,6 +7,7 @@ import heroImage from '@/assets/wedding-hero.jpg';
 import couplePortrait from '@/assets/couple-portrait-1.jpg';
 import coupleDancing from '@/assets/couple-dancing.jpg';
 import coupleBeachWalk from '@/assets/couple-beach-walk.jpg';
+import { Wine, Cookie, UtensilsCrossed, Sandwich, Moon } from 'lucide-react';
 
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 
@@ -188,9 +189,7 @@ const Index = () => {
           {/* Välkomstdrink */}
             <div className="text-center bg-card/60 backdrop-blur-sm rounded-3xl p-6 shadow-warm animate-bounce-in" style={{ animationDelay: '0.2s' }}>
               <div className="w-16 h-16 bg-terracotta/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
+                <Wine className="w-8 h-8 text-terracotta" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-primary mb-3">{t('details.welcomedrink')}</h3>
               <p className="text-2xl font-bold text-terracotta mb-2">{t('details.welcomedrinkTime')}</p>
@@ -210,9 +209,7 @@ const Index = () => {
             {/* Aperitivo */}
             <div className="text-center bg-card/60 backdrop-blur-sm rounded-3xl p-6 shadow-warm animate-bounce-in" style={{ animationDelay: '0.4s' }}>
               <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-                </svg>
+                <Cookie className="w-8 h-8 text-accent" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-primary mb-3">{t('details.aperitivo')}</h3>
               <p className="text-2xl font-bold text-accent mb-2">{t('details.aperitivoTime')}</p>
@@ -221,9 +218,7 @@ const Index = () => {
             {/* Lunch */}
             <div className="text-center bg-card/60 backdrop-blur-sm rounded-3xl p-6 shadow-warm animate-bounce-in" style={{ animationDelay: '0.6s' }}>
               <div className="w-16 h-16 bg-olive/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-olive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
-                </svg>
+                <UtensilsCrossed className="w-8 h-8 text-olive" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-primary mb-3">{t('details.lunch')}</h3>
               <p className="text-2xl font-bold text-olive mb-2">{t('details.lunchTime')}</p>
@@ -243,9 +238,7 @@ const Index = () => {
             {/* Last Dance */}
             <div className="text-center bg-card/60 backdrop-blur-sm rounded-3xl p-6 shadow-warm animate-bounce-in" style={{ animationDelay: '1.0s' }}>
               <div className="w-16 h-16 bg-sage/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
+                <Sandwich className="w-8 h-8 text-sage" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-primary mb-3">{t('details.lastDance')}</h3>
               <p className="text-2xl font-bold text-sage mb-2">{t('details.lastDanceTime')}</p>
@@ -254,9 +247,7 @@ const Index = () => {
              {/* Party Over */}
             <div className="text-center bg-card/60 backdrop-blur-sm rounded-3xl p-6 shadow-warm animate-bounce-in" style={{ animationDelay: '1.0s' }}>
               <div className="w-16 h-16 bg-sage/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
+                <Moon className="w-8 h-8 text-sage" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-primary mb-3">{t('details.PartyOver')}</h3>
               <p className="text-2xl font-bold text-sage mb-2">{t('details.PartyOverTime')}</p>
