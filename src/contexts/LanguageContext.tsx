@@ -31,8 +31,8 @@ const translations = {
     'story.subtitle': 'Två hjärtan som fann varandra och bestämde sig för att slå tillsammans för evigt.',
     'story.description': 'Sann kärlek har inget slut, och vår kärlek är beviset på att sagor verkligen finns. Vi inbjuder dig att fira med oss detta nya kapitel i våra liv.',
     
-    // Details/Schedule
-    'details.title': 'Schema',
+ // Details/Schedule
+    'details.title': 'Bröllopsdagen',
     'details.welcomedrink': 'Välkomstdrink',
     'details.ceremony': 'Ceremoni',
     'details.aperitivo': 'Aperitivo',
@@ -119,6 +119,7 @@ const translations = {
     
     // Details/Schedule
     'details.title': 'Programa del Día',
+    'details.welcomedrink': 'VÄLKOMSTDRINK SPANSKA',
     'details.ceremony': 'Ceremonia',
     'details.aperitivo': 'Aperitivo',
     'details.lunch': 'Almuerzo',
@@ -204,6 +205,7 @@ const translations = {
     
     // Details/Schedule
     'details.title': 'Wedding Day',
+    'details.welcomedrink': 'Welcome drinkw',
     'details.ceremony': 'Ceremony',
     'details.aperitivo': 'Aperitivo',
     'details.lunch': 'Banquet',
