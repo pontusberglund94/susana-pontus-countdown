@@ -176,6 +176,63 @@ const Index = () => {
         </div>
       </section>
 
+            {/* Karusell 3.0 Story Section */}
+      <section id="story4" className="py-20 px-4 bg-cream/30">
+        <div className="max-w-6xl mx-auto text-center">
+          <FloralDivider />
+          
+          {/* Couple photos carousel */}
+          <div className="mt-12">
+            <style>{`
+              .embla__slide.is-snapped img {
+                opacity: 1 !important;
+                transform: scale(1) !important;
+              }
+            `}</style>
+            <Carousel
+              opts={{
+                align: "center",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-2 md:-ml-4">
+                <CarouselItem className="pl-2 md:pl-4 basis-2/3 md:basis-1/2 embla__slide">
+                  <div className="p-1 flex items-center justify-center h-64 md:h-[500px]">
+                    <img 
+                      src={couplePortrait} 
+                      alt="Couple portrait"
+                      className="max-h-full max-w-full object-contain rounded-3xl shadow-warm opacity-60 scale-90 transition-all duration-300"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="pl-2 md:pl-4 basis-2/3 md:basis-1/2 embla__slide">
+                  <div className="p-1 flex items-center justify-center h-64 md:h-[500px]">
+                    <img 
+                      src={coupleDancing} 
+                      alt="Couple dancing"
+                      className="max-h-full max-w-full object-contain rounded-3xl shadow-warm opacity-60 scale-90 transition-all duration-300"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
+                  <div className="p-1">
+                    <img 
+                      src={coupleBeachWalk} 
+                      alt="Couple BeachWalk"
+                      className="w-full h-64 md:h-96 object-cover rounded-3xl shadow-warm transition-all duration-300"
+                    />
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="left-2 md:left-4 bg-white/80 hover:bg-white" />
+              <CarouselNext className="right-2 md:right-4 bg-white/80 hover:bg-white" />
+            </Carousel>
+          </div>
+          
+          <FloralDivider />
+        </div>
+      </section>
       
       {/* Schedule Section */}
       <section id="schedule" className="py-20 px-4 bg-gradient-earth">
