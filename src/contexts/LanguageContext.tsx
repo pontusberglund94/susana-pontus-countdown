@@ -70,6 +70,15 @@ const translations = {
     'rsvp.title': 'Bekräfta din Närvaro',
     'rsvp.description': 'Din närvaro är den mest värdefulla gåvan. Vänligen bekräfta din närvaro genom att fylla i följande formulär.',
     
+    // Additional Information
+    'info.title': 'Övrig Information',
+    'info.dresscode.title': 'Klädkod',
+    'info.dresscode.description': 'Kostym och slips. Vi uppmuntrar ljusa kostymer!',
+    'info.kids.title': 'Barn',
+    'info.kids.description': 'Vi tror att gästerna kommer att njuta mer av bröllopet om det är barnfritt. Vi förstår dock att detta inte är möjligt för alla och barn är naturligtvis välkomna.',
+    'info.gifts.title': 'Bröllopsgåvor',
+    'info.gifts.description': 'Vänligen inga fysiska presenter - vi har inte plats i våra väskor att ta hem dem till Sverige.',
+    
     // Mallorca Info
     'mallorca.title': 'Upptäck Mallorca',
     'mallorca.beaches.title': 'Paradisiska Stränder',
@@ -119,13 +128,13 @@ const translations = {
     
     // Details/Schedule
     'details.title': 'Programa del Día',
-    'details.welcomedrink': 'VÄLKOMSTDRINK SPANSKA',
+    'details.welcomedrink': 'Bebida de Bienvenida',
     'details.ceremony': 'Ceremonia',
     'details.aperitivo': 'Aperitivo',
     'details.lunch': 'Almuerzo',
     'details.party': 'Fiesta',
-    'details.lastDance': 'VICKNING SPANSKA',
-    'details.PartyOver': 'STÄNGNING SPANSKA',
+    'details.lastDance': 'Refrigerio Nocturno',
+    'details.PartyOver': 'Cierre',
     'details.welcomedrinkTime': '13:00',
     'details.ceremonyTime': '13:30',
     'details.aperitivoTime': '14:30',
@@ -155,6 +164,15 @@ const translations = {
     // RSVP
     'rsvp.title': 'Confirma tu Asistencia',
     'rsvp.description': 'Tu presencia es el regalo más valioso. Por favor, confirma tu asistencia completando el siguiente formulario.',
+    
+    // Additional Information
+    'info.title': 'Información Adicional',
+    'info.dresscode.title': 'Código de Vestimenta',
+    'info.dresscode.description': 'Traje y corbata. ¡Animamos a usar trajes de colores claros!',
+    'info.kids.title': 'Niños',
+    'info.kids.description': 'Creemos que los invitados disfrutarán más de la boda si es libre de niños. Sin embargo, entendemos que esto simplemente no es posible para algunos y los niños son, por supuesto, bienvenidos.',
+    'info.gifts.title': 'Regalos de Boda',
+    'info.gifts.description': 'Por favor, no regalos físicos - no tenemos espacio en nuestras maletas para llevarlos a Suecia.',
     
     // Mallorca Info
     'mallorca.title': 'Descubre Mallorca',
@@ -205,7 +223,7 @@ const translations = {
     
     // Details/Schedule
     'details.title': 'Wedding Day',
-    'details.welcomedrink': 'Welcome drinkw',
+    'details.welcomedrink': 'Welcome drink',
     'details.ceremony': 'Ceremony',
     'details.aperitivo': 'Aperitivo',
     'details.lunch': 'Banquet',
@@ -241,6 +259,15 @@ const translations = {
     // RSVP
     'rsvp.title': 'Confirm Your Attendance',
     'rsvp.description': 'Your presence is the most valuable gift. Please confirm your attendance by completing the following form.',
+    
+    // Additional Information
+    'info.title': 'Additional Information',
+    'info.dresscode.title': 'Dress Code',
+    'info.dresscode.description': 'Suit and tie. We encourage light-colored suits!',
+    'info.kids.title': 'Children',
+    'info.kids.description': 'We believe guests will enjoy the wedding more if they are able to attend childfree. However, we realize this is simply not possible for some and children are of course welcome.',
+    'info.gifts.title': 'Wedding Gifts',
+    'info.gifts.description': 'Please no physical presents - we don\'t have room in our bags to bring them home to Sweden.',
     
     // Mallorca Info
     'mallorca.title': 'Discover Mallorca',

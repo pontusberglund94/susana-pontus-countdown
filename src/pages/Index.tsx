@@ -7,7 +7,8 @@ import heroImage from '@/assets/wedding-hero.jpg';
 import couplePortrait from '@/assets/couple-portrait-1.jpg';
 import coupleDancing from '@/assets/couple-dancing.jpg';
 import coupleBeachWalk from '@/assets/couple-beach-walk.jpg';
-import { Wine, Cookie, UtensilsCrossed, Sandwich, Moon } from 'lucide-react';
+import { Wine, Cookie, UtensilsCrossed, Sandwich, Moon, Bus, Shirt, Baby, Gift } from 'lucide-react';
+import solivaretPool from '@/assets/solivaret_pool.jpg';
 
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 
@@ -257,7 +258,13 @@ const Index = () => {
       </section>
 
       {/* Accommodation Section */}
-      <section id="accommodation" className="py-20 px-4 bg-cream/30">
+      <section 
+        id="accommodation" 
+        className="py-20 px-4 bg-cover bg-center bg-no-repeat relative"
+        style={{ 
+          backgroundImage: `linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url(${solivaretPool})`,
+        }}
+      >
         <div className="max-w-4xl mx-auto text-center">
           <FloralDivider />
           
@@ -305,9 +312,7 @@ const Index = () => {
           
           <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-8 shadow-warm animate-bounce-in max-w-2xl mx-auto" style={{ animationDelay: '0.2s' }}>
             <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
-              </svg>
+              <Bus className="w-8 h-8 text-accent" />
             </div>
             <h3 className="font-serif text-2xl font-semibold text-primary mb-4">
               {t('transportation.bus')}
@@ -452,8 +457,62 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Additional Information Section */}
+      <section className="py-20 px-4 bg-cream/30">
+        <div className="max-w-6xl mx-auto">
+          <FloralDivider />
+          
+          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary text-center mb-16 animate-bounce-in">
+            {t('info.title')}
+          </h2>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {/* Dress Code */}
+            <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-8 shadow-warm animate-bounce-in text-center" style={{ animationDelay: '0.2s' }}>
+              <div className="w-16 h-16 bg-terracotta/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Shirt className="w-8 h-8 text-terracotta" />
+              </div>
+              <h3 className="font-serif text-2xl font-semibold text-primary mb-4">
+                {t('info.dresscode.title')}
+              </h3>
+              <p className="text-muted-foreground">
+                {t('info.dresscode.description')}
+              </p>
+            </div>
+
+            {/* Kids */}
+            <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-8 shadow-warm animate-bounce-in text-center" style={{ animationDelay: '0.4s' }}>
+              <div className="w-16 h-16 bg-olive/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Baby className="w-8 h-8 text-olive" />
+              </div>
+              <h3 className="font-serif text-2xl font-semibold text-primary mb-4">
+                {t('info.kids.title')}
+              </h3>
+              <p className="text-muted-foreground">
+                {t('info.kids.description')}
+              </p>
+            </div>
+
+            {/* Wedding Gifts */}
+            <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-8 shadow-warm animate-bounce-in text-center" style={{ animationDelay: '0.6s' }}>
+              <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Gift className="w-8 h-8 text-gold" />
+              </div>
+              <h3 className="font-serif text-2xl font-semibold text-primary mb-4">
+                {t('info.gifts.title')}
+              </h3>
+              <p className="text-muted-foreground">
+                {t('info.gifts.description')}
+              </p>
+            </div>
+          </div>
+          
+          <FloralDivider />
+        </div>
+      </section>
+
       {/* Photos Section */}
-      <section id="photos" className="py-20 px-4 bg-cream/30">
+      <section id="photos" className="py-20 px-4 bg-gradient-earth">
         <div className="max-w-6xl mx-auto text-center">
           <FloralDivider />
           
@@ -503,7 +562,7 @@ const Index = () => {
           <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-6 shadow-warm animate-bounce-in max-w-3xl mx-auto" style={{ animationDelay: '0.4s' }}>
             <iframe 
               src="https://docs.google.com/forms/d/e/1FAIpQLSeMUUMnSxykSv_W1J_VK7Me-d4E7Ydgp27B6Xx_uAuQtLJcnQ/viewform?embedded=true" 
-              className="w-full h-[600px] md:h-[800px] border-0 rounded-xl"
+              className="w-full h-[1400px] border-0 rounded-xl"
               loading="lazy"
               title="Formulario de Confirmación RSVP"
             >
