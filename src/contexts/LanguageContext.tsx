@@ -52,8 +52,8 @@ const translations = {
     // Accommodation
     'accommodation.title': 'Boende på Hotel Rural S\'Olivaret & Spa',
     'accommodation.description': 'Det finns möjlighet att bo på Hotel Rural S\'Olivaret & Spa som ligger i anslutning till bröllopslokalen.',
-    'accommodation.discountCode': 'Rabattkod',
-    'accommodation.singleNight': 'För boende två nätter använd kod WEDDINGSUSANAPONTUS20 för 20% rabatt. För boende två nätter använd kod WEDDINGSUSANAPONTUS10 för 10% rabatt.',
+    'accommodation.discountCode': 'Rabattkoder',
+    'accommodation.singleNight': 'WEDDINGSUSANAPONTUS10 för 10% rabatt vid 1 natt. WEDDINGSUSANAPONTUS20 för 20% rabatt vid 2+ nätter.',
     'accommodation.visitWebsite': 'Boka på hemsidan',
     
     // Transportation
@@ -135,11 +135,11 @@ const translations = {
     'details.location': 'S\'Olivaret, Mallorca',
     
     // Accommodation
-    'accommodation.title': 'Alojamiento',
-    'accommodation.description': 'Hemos organizado alojamiento en un hotel maravilloso cerca del lugar de la boda.',
-    'accommodation.discountCode': 'Código de descuento disponible',
-    'accommodation.singleNight': 'Para alojamiento de una sola noche, contacta con los novios y hablaremos con el hotel.',
-    'accommodation.visitWebsite': 'Visitar web',
+    'accommodation.title': 'Alojamiento en Hotel Rural S\'Olivaret & Spa',
+    'accommodation.description': 'Existe la posibilidad de alojarse en el Hotel Rural S\'Olivaret & Spa, que se encuentra junto al lugar de la boda.',
+    'accommodation.discountCode': 'Códigos de descuento',
+    'accommodation.singleNight': 'WEDDINGSUSANAPONTUS10 para 10% de descuento en 1 noche. WEDDINGSUSANAPONTUS20 para 20% de descuento en 2+ noches.',
+    'accommodation.visitWebsite': 'Reservar en la web',
     
     // Transportation
     'transportation.title': 'Transporte',
@@ -220,11 +220,11 @@ const translations = {
     'details.location': 'S\'Olivaret, Mallorca',
     
     // Accommodation
-    'accommodation.title': 'Accommodation',
-    'accommodation.description': 'We have arranged accommodation at a wonderful hotel near the wedding venue.',
-    'accommodation.discountCode': 'Discount code available',
-    'accommodation.singleNight': 'For single night stays, contact the couple and we will speak with the hotel.',
-    'accommodation.visitWebsite': 'Visit website',
+    'accommodation.title': 'Accommodation at Hotel Rural S\'Olivaret & Spa',
+    'accommodation.description': 'There is an option to stay at Hotel Rural S\'Olivaret & Spa, which is located next to the wedding venue.',
+    'accommodation.discountCode': 'Discount codes',
+    'accommodation.singleNight': 'WEDDINGSUSANAPONTUS10 for 10% discount on 1 night. WEDDINGSUSANAPONTUS20 for 20% discount on 2+ nights.',
+    'accommodation.visitWebsite': 'Book on website',
     
     // Transportation
     'transportation.title': 'Transportation',
