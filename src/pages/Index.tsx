@@ -11,6 +11,7 @@ import { Wine, Cookie, UtensilsCrossed, Sandwich, Moon, Bus, Shirt, Baby, Gift }
 import solivaretPool from '@/assets/solivaret_pool.jpg';
 
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
 
 
 const Index = () => {
@@ -138,33 +139,38 @@ const Index = () => {
                 align: "center",
                 loop: true,
               }}
+              plugins={[
+                Autoplay({
+                  delay: 3000,
+                }),
+              ]}
               className="w-full"
             >
               <CarouselContent className="-ml-2 md:-ml-4">
-                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
-                  <div className="p-1">
+                <CarouselItem className="pl-2 md:pl-4 basis-2/3 md:basis-1/3">
+                  <div className="p-1 transition-all duration-300 opacity-70 scale-90">
                     <img 
                       src={couplePortrait} 
                       alt="Couple portrait"
-                      className="w-full h-64 md:h-96 object-cover rounded-3xl shadow-warm transition-all duration-300"
+                      className="w-full h-64 md:h-80 object-cover rounded-3xl shadow-warm"
                     />
                   </div>
                 </CarouselItem>
-                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
-                  <div className="p-1">
+                <CarouselItem className="pl-2 md:pl-4 basis-2/3 md:basis-1/3">
+                  <div className="p-1 transition-all duration-300">
                     <img 
                       src={coupleDancing} 
                       alt="Couple dancing"
-                      className="w-full h-64 md:h-96 object-cover rounded-3xl shadow-warm transition-all duration-300"
+                      className="w-full h-80 md:h-[28rem] object-cover rounded-3xl shadow-warm"
                     />
                   </div>
                 </CarouselItem>
-                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
-                  <div className="p-1">
+                <CarouselItem className="pl-2 md:pl-4 basis-2/3 md:basis-1/3">
+                  <div className="p-1 transition-all duration-300 opacity-70 scale-90">
                     <img 
                       src={coupleBeachWalk} 
                       alt="Couple BeachWalk"
-                      className="w-full h-64 md:h-96 object-cover rounded-3xl shadow-warm transition-all duration-300"
+                      className="w-full h-64 md:h-80 object-cover rounded-3xl shadow-warm"
                     />
                   </div>
                 </CarouselItem>
@@ -274,7 +280,7 @@ const Index = () => {
             {t('accommodation.title')}
           </h2>
           
-          <div className="border-4 border-primary/50 rounded-3xl p-8 shadow-warm animate-bounce-in max-w-2xl mx-auto" style={{ animationDelay: '0.2s' }}>
+          <div className="rounded-3xl p-8 shadow-warm animate-bounce-in max-w-2xl mx-auto" style={{ animationDelay: '0.2s' }}>
             <div className="w-16 h-16 bg-terracotta/30 rounded-full flex items-center justify-center mx-auto mb-6 backdrop-blur-sm">
               <svg className="w-8 h-8 text-terracotta drop-shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
