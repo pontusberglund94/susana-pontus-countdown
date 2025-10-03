@@ -198,13 +198,13 @@ const Index = () => {
             
             {/* Ceremony */}
             <div className="text-center bg-card/60 backdrop-blur-sm rounded-3xl p-6 shadow-warm animate-bounce-in" style={{ animationDelay: '0.2s' }}>
-              <div className="w-16 h-16 bg-terracotta/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
               <h3 className="font-serif text-xl font-semibold text-primary mb-3">{t('details.ceremony')}</h3>
-              <p className="text-2xl font-bold text-terracotta mb-2">{t('details.ceremonyTime')}</p>
+              <p className="text-2xl font-bold text-gold mb-2">{t('details.ceremonyTime')}</p>
             </div>
 
             {/* Aperitivo */}
@@ -227,13 +227,13 @@ const Index = () => {
 
             {/* Party */}
             <div className="text-center bg-card/60 backdrop-blur-sm rounded-3xl p-6 shadow-warm animate-bounce-in" style={{ animationDelay: '0.8s' }}>
-              <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-terracotta/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-1v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-1" />
                 </svg>
               </div>
               <h3 className="font-serif text-xl font-semibold text-primary mb-3">{t('details.party')}</h3>
-              <p className="text-2xl font-bold text-gold mb-2">{t('details.partyTime')}</p>
+              <p className="text-2xl font-bold text-terracotta mb-2">{t('details.partyTime')}</p>
             </div>
 
             {/* Last Dance */}
@@ -247,11 +247,11 @@ const Index = () => {
             
              {/* Party Over */}
             <div className="text-center bg-card/60 backdrop-blur-sm rounded-3xl p-6 shadow-warm animate-bounce-in" style={{ animationDelay: '1.0s' }}>
-              <div className="w-16 h-16 bg-sage/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Moon className="w-8 h-8 text-sage" />
+              <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Moon className="w-8 h-8 text-gold" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-primary mb-3">{t('details.PartyOver')}</h3>
-              <p className="text-2xl font-bold text-sage mb-2">{t('details.PartyOverTime')}</p>
+              <p className="text-2xl font-bold text-gold mb-2">{t('details.PartyOverTime')}</p>
             </div>
           </div>
         </div>
@@ -262,7 +262,9 @@ const Index = () => {
         id="accommodation" 
         className="py-20 px-4 bg-cover bg-center bg-no-repeat relative"
         style={{ 
-          backgroundImage: `linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url(${solivaretPool})`,
+          backgroundImage: `linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(${solivaretPool})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center center',
         }}
       >
         <div className="max-w-4xl mx-auto text-center">
@@ -562,7 +564,7 @@ const Index = () => {
           <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-6 shadow-warm animate-bounce-in max-w-3xl mx-auto" style={{ animationDelay: '0.4s' }}>
             <iframe 
               src="https://docs.google.com/forms/d/e/1FAIpQLSeMUUMnSxykSv_W1J_VK7Me-d4E7Ydgp27B6Xx_uAuQtLJcnQ/viewform?embedded=true" 
-              className="w-full h-[2500px] border-0 rounded-xl"
+              className="w-full h-[2000px] border-0 rounded-xl"
               loading="lazy"
               title="Formulario de Confirmación RSVP"
             >
