@@ -147,30 +147,30 @@ const Index = () => {
               className="w-full"
             >
               <CarouselContent className="-ml-2 md:-ml-4">
-                <CarouselItem className="pl-2 md:pl-4 basis-2/3 md:basis-1/3">
-                  <div className="p-1 transition-all duration-300 opacity-70 scale-90">
+                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
+                  <div className="p-1">
                     <img 
                       src={couplePortrait} 
                       alt="Couple portrait"
-                      className="w-full h-64 md:h-80 object-cover rounded-3xl shadow-warm"
+                      className="w-full h-72 md:h-[26rem] object-cover rounded-3xl shadow-warm transition-all duration-300"
                     />
                   </div>
                 </CarouselItem>
-                <CarouselItem className="pl-2 md:pl-4 basis-2/3 md:basis-1/3">
-                  <div className="p-1 transition-all duration-300">
+                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
+                  <div className="p-1">
                     <img 
                       src={coupleDancing} 
                       alt="Couple dancing"
-                      className="w-full h-80 md:h-[28rem] object-cover rounded-3xl shadow-warm"
+                      className="w-full h-72 md:h-[26rem] object-cover rounded-3xl shadow-warm transition-all duration-300"
                     />
                   </div>
                 </CarouselItem>
-                <CarouselItem className="pl-2 md:pl-4 basis-2/3 md:basis-1/3">
-                  <div className="p-1 transition-all duration-300 opacity-70 scale-90">
+                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
+                  <div className="p-1">
                     <img 
                       src={coupleBeachWalk} 
                       alt="Couple BeachWalk"
-                      className="w-full h-64 md:h-80 object-cover rounded-3xl shadow-warm"
+                      className="w-full h-72 md:h-[26rem] object-cover rounded-3xl shadow-warm transition-all duration-300"
                     />
                   </div>
                 </CarouselItem>
