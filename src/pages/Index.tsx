@@ -270,30 +270,30 @@ const Index = () => {
         <div className="max-w-4xl mx-auto text-center">
           <FloralDivider />
           
-          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary mb-16 animate-bounce-in">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-16 animate-bounce-in [text-shadow:_2px_2px_8px_rgb(255_255_255_/_90%)]">
             {t('accommodation.title')}
           </h2>
           
-          <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-8 shadow-warm animate-bounce-in max-w-2xl mx-auto" style={{ animationDelay: '0.2s' }}>
-            <div className="w-16 h-16 bg-terracotta/20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg className="w-8 h-8 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="border-4 border-primary/50 backdrop-blur-md rounded-3xl p-8 shadow-warm animate-bounce-in max-w-2xl mx-auto" style={{ animationDelay: '0.2s' }}>
+            <div className="w-16 h-16 bg-terracotta/30 rounded-full flex items-center justify-center mx-auto mb-6 backdrop-blur-sm">
+              <svg className="w-8 h-8 text-terracotta drop-shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
               </svg>
             </div>
-            <p className="text-lg text-muted-foreground mb-6">
+            <p className="text-lg text-foreground font-semibold mb-6 [text-shadow:_1px_1px_6px_rgb(255_255_255_/_95%)]">
               {t('accommodation.description')}
             </p>
             <div className="space-y-4">
-              <div className="bg-primary/10 rounded-2xl p-4">
-                <p className="font-semibold text-primary mb-2">
+              <div className="bg-primary/20 backdrop-blur-sm rounded-2xl p-4">
+                <p className="font-bold text-primary mb-2 [text-shadow:_1px_1px_4px_rgb(255_255_255_/_90%)]">
                   {t('accommodation.discountCode')}
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-foreground font-semibold [text-shadow:_1px_1px_4px_rgb(255_255_255_/_90%)]">
                   {t('accommodation.singleNight')}
                 </p>
               </div>
               <button 
-                className="bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:bg-primary/90 transition-colors"
+                className="bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:bg-primary/90 transition-colors shadow-lg"
                 onClick={() => window.open('https://www.solivaret.com/en', '_blank')}
               >
                 {t('accommodation.visitWebsite')}
