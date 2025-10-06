@@ -10,7 +10,7 @@ import coupleBeachWalk from '@/assets/couple-beach-walk.jpg';
 import { Wine, Cookie, UtensilsCrossed, Sandwich, Moon, Bus, Shirt, Baby, Gift } from 'lucide-react';
 import solivaretPool from '@/assets/solivaret_pool.jpg';
 
-// Import ps images for carousels
+// Import all ps images for carousels
 import ps1 from '@/assets/ps (1).jpg';
 import ps2 from '@/assets/ps (2).jpg';
 import ps3 from '@/assets/ps (3).jpg';
@@ -23,6 +23,36 @@ import ps9 from '@/assets/ps (9).jpg';
 import ps10 from '@/assets/ps (10).jpg';
 import ps11 from '@/assets/ps (11).jpg';
 import ps12 from '@/assets/ps (12).jpg';
+import ps13 from '@/assets/ps (13).jpg';
+import ps14 from '@/assets/ps (14).jpg';
+import ps15 from '@/assets/ps (15).jpg';
+import ps16 from '@/assets/ps (16).jpg';
+import ps17 from '@/assets/ps (17).jpg';
+import ps18 from '@/assets/ps (18).jpg';
+import ps19 from '@/assets/ps (19).jpg';
+import ps20 from '@/assets/ps (20).jpg';
+import ps21 from '@/assets/ps (21).jpg';
+import ps22 from '@/assets/ps (22).jpg';
+import ps23 from '@/assets/ps (23).jpg';
+import ps24 from '@/assets/ps (24).jpg';
+import ps25 from '@/assets/ps (25).jpg';
+import ps26 from '@/assets/ps (26).jpg';
+import ps27 from '@/assets/ps (27).jpg';
+import ps28 from '@/assets/ps (28).jpg';
+import ps29 from '@/assets/ps (29).jpg';
+import ps30 from '@/assets/ps (30).jpg';
+import ps31 from '@/assets/ps (31).jpg';
+import ps32 from '@/assets/ps (32).jpg';
+import ps33 from '@/assets/ps (33).jpg';
+import ps34 from '@/assets/ps (34).jpg';
+import ps35 from '@/assets/ps (35).jpg';
+import ps36 from '@/assets/ps (36).jpg';
+import ps37 from '@/assets/ps (37).jpg';
+import ps38 from '@/assets/ps (38).jpg';
+import ps39 from '@/assets/ps (39).jpg';
+import ps40 from '@/assets/ps (40).jpg';
+import ps41 from '@/assets/ps (41).jpg';
+import ps42 from '@/assets/ps (42).jpg';
 
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
@@ -32,6 +62,15 @@ const Index = () => {
   const { t } = useLanguage();
   // Wedding date: April 18, 2026
   const weddingDate = new Date('2026-04-18T13:00:00');
+
+  // Array of all ps images
+  const psImages = [
+    ps1, ps2, ps3, ps4, ps5, ps6, ps7, ps8, ps9, ps10,
+    ps11, ps12, ps13, ps14, ps15, ps16, ps17, ps18, ps19, ps20,
+    ps21, ps22, ps23, ps24, ps25, ps26, ps27, ps28, ps29, ps30,
+    ps31, ps32, ps33, ps34, ps35, ps36, ps37, ps38, ps39, ps40,
+    ps41, ps42
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -116,27 +155,15 @@ const Index = () => {
               className="w-full"
             >
               <CarouselContent>
-                <CarouselItem>
-                  <img 
-                    src={ps1} 
-                    alt="Wedding photo 1"
-                    className="w-full h-96 object-cover rounded-3xl shadow-warm"
-                  />
-                </CarouselItem>
-                <CarouselItem>
-                  <img 
-                    src={ps2} 
-                    alt="Wedding photo 2"
-                    className="w-full h-96 object-cover rounded-3xl shadow-warm"
-                  />
-                </CarouselItem>
-                <CarouselItem>
-                  <img 
-                    src={ps3} 
-                    alt="Wedding photo 3"
-                    className="w-full h-96 object-cover rounded-3xl shadow-warm"
-                  />
-                </CarouselItem>
+                {psImages.map((img, index) => (
+                  <CarouselItem key={index}>
+                    <img 
+                      src={img} 
+                      alt={`Wedding photo ${index + 1}`}
+                      className="w-full h-96 object-contain bg-cream/50 rounded-3xl shadow-warm"
+                    />
+                  </CarouselItem>
+                ))}
               </CarouselContent>
               <CarouselPrevious className="left-4" />
               <CarouselNext className="right-4" />
@@ -168,87 +195,17 @@ const Index = () => {
               className="w-full"
             >
               <CarouselContent className="-ml-2 md:-ml-4">
-                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
-                  <div className="p-1">
-                    <img 
-                      src={ps4} 
-                      alt="Wedding photo 4"
-                      className="w-full h-72 md:h-[26rem] object-cover rounded-3xl shadow-warm transition-all duration-300"
-                    />
-                  </div>
-                </CarouselItem>
-                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
-                  <div className="p-1">
-                    <img 
-                      src={ps5} 
-                      alt="Wedding photo 5"
-                      className="w-full h-72 md:h-[26rem] object-cover rounded-3xl shadow-warm transition-all duration-300"
-                    />
-                  </div>
-                </CarouselItem>
-                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
-                  <div className="p-1">
-                    <img 
-                      src={ps6} 
-                      alt="Wedding photo 6"
-                      className="w-full h-72 md:h-[26rem] object-cover rounded-3xl shadow-warm transition-all duration-300"
-                    />
-                  </div>
-                </CarouselItem>
-                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
-                  <div className="p-1">
-                    <img 
-                      src={ps7} 
-                      alt="Wedding photo 7"
-                      className="w-full h-72 md:h-[26rem] object-cover rounded-3xl shadow-warm transition-all duration-300"
-                    />
-                  </div>
-                </CarouselItem>
-                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
-                  <div className="p-1">
-                    <img 
-                      src={ps8} 
-                      alt="Wedding photo 8"
-                      className="w-full h-72 md:h-[26rem] object-cover rounded-3xl shadow-warm transition-all duration-300"
-                    />
-                  </div>
-                </CarouselItem>
-                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
-                  <div className="p-1">
-                    <img 
-                      src={ps9} 
-                      alt="Wedding photo 9"
-                      className="w-full h-72 md:h-[26rem] object-cover rounded-3xl shadow-warm transition-all duration-300"
-                    />
-                  </div>
-                </CarouselItem>
-                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
-                  <div className="p-1">
-                    <img 
-                      src={ps10} 
-                      alt="Wedding photo 10"
-                      className="w-full h-72 md:h-[26rem] object-cover rounded-3xl shadow-warm transition-all duration-300"
-                    />
-                  </div>
-                </CarouselItem>
-                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
-                  <div className="p-1">
-                    <img 
-                      src={ps11} 
-                      alt="Wedding photo 11"
-                      className="w-full h-72 md:h-[26rem] object-cover rounded-3xl shadow-warm transition-all duration-300"
-                    />
-                  </div>
-                </CarouselItem>
-                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
-                  <div className="p-1">
-                    <img 
-                      src={ps12} 
-                      alt="Wedding photo 12"
-                      className="w-full h-72 md:h-[26rem] object-cover rounded-3xl shadow-warm transition-all duration-300"
-                    />
-                  </div>
-                </CarouselItem>
+                {psImages.map((img, index) => (
+                  <CarouselItem key={index} className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
+                    <div className="p-1">
+                      <img 
+                        src={img} 
+                        alt={`Wedding photo ${index + 1}`}
+                        className="w-full h-72 md:h-[26rem] object-contain bg-cream/50 rounded-3xl shadow-warm transition-all duration-300"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
               </CarouselContent>
               <CarouselPrevious className="left-2 md:left-4 bg-white/80 hover:bg-white" />
               <CarouselNext className="right-2 md:right-4 bg-white/80 hover:bg-white" />
