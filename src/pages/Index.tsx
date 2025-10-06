@@ -10,6 +10,20 @@ import coupleBeachWalk from '@/assets/couple-beach-walk.jpg';
 import { Wine, Cookie, UtensilsCrossed, Sandwich, Moon, Bus, Shirt, Baby, Gift } from 'lucide-react';
 import solivaretPool from '@/assets/solivaret_pool.jpg';
 
+// Import ps images for carousels
+import ps1 from '@/assets/ps (1).jpg';
+import ps2 from '@/assets/ps (2).jpg';
+import ps3 from '@/assets/ps (3).jpg';
+import ps4 from '@/assets/ps (4).jpg';
+import ps5 from '@/assets/ps (5).jpg';
+import ps6 from '@/assets/ps (6).jpg';
+import ps7 from '@/assets/ps (7).jpg';
+import ps8 from '@/assets/ps (8).jpg';
+import ps9 from '@/assets/ps (9).jpg';
+import ps10 from '@/assets/ps (10).jpg';
+import ps11 from '@/assets/ps (11).jpg';
+import ps12 from '@/assets/ps (12).jpg';
+
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 
@@ -104,15 +118,22 @@ const Index = () => {
               <CarouselContent>
                 <CarouselItem>
                   <img 
-                    src={couplePortrait} 
-                    alt="Couple portrait"
+                    src={ps1} 
+                    alt="Wedding photo 1"
                     className="w-full h-96 object-cover rounded-3xl shadow-warm"
                   />
                 </CarouselItem>
                 <CarouselItem>
                   <img 
-                    src={coupleDancing} 
-                    alt="Couple dancing"
+                    src={ps2} 
+                    alt="Wedding photo 2"
+                    className="w-full h-96 object-cover rounded-3xl shadow-warm"
+                  />
+                </CarouselItem>
+                <CarouselItem>
+                  <img 
+                    src={ps3} 
+                    alt="Wedding photo 3"
                     className="w-full h-96 object-cover rounded-3xl shadow-warm"
                   />
                 </CarouselItem>
@@ -150,8 +171,8 @@ const Index = () => {
                 <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
                   <div className="p-1">
                     <img 
-                      src={couplePortrait} 
-                      alt="Couple portrait"
+                      src={ps4} 
+                      alt="Wedding photo 4"
                       className="w-full h-72 md:h-[26rem] object-cover rounded-3xl shadow-warm transition-all duration-300"
                     />
                   </div>
@@ -159,8 +180,8 @@ const Index = () => {
                 <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
                   <div className="p-1">
                     <img 
-                      src={coupleDancing} 
-                      alt="Couple dancing"
+                      src={ps5} 
+                      alt="Wedding photo 5"
                       className="w-full h-72 md:h-[26rem] object-cover rounded-3xl shadow-warm transition-all duration-300"
                     />
                   </div>
@@ -168,8 +189,62 @@ const Index = () => {
                 <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
                   <div className="p-1">
                     <img 
-                      src={coupleBeachWalk} 
-                      alt="Couple BeachWalk"
+                      src={ps6} 
+                      alt="Wedding photo 6"
+                      className="w-full h-72 md:h-[26rem] object-cover rounded-3xl shadow-warm transition-all duration-300"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
+                  <div className="p-1">
+                    <img 
+                      src={ps7} 
+                      alt="Wedding photo 7"
+                      className="w-full h-72 md:h-[26rem] object-cover rounded-3xl shadow-warm transition-all duration-300"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
+                  <div className="p-1">
+                    <img 
+                      src={ps8} 
+                      alt="Wedding photo 8"
+                      className="w-full h-72 md:h-[26rem] object-cover rounded-3xl shadow-warm transition-all duration-300"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
+                  <div className="p-1">
+                    <img 
+                      src={ps9} 
+                      alt="Wedding photo 9"
+                      className="w-full h-72 md:h-[26rem] object-cover rounded-3xl shadow-warm transition-all duration-300"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
+                  <div className="p-1">
+                    <img 
+                      src={ps10} 
+                      alt="Wedding photo 10"
+                      className="w-full h-72 md:h-[26rem] object-cover rounded-3xl shadow-warm transition-all duration-300"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
+                  <div className="p-1">
+                    <img 
+                      src={ps11} 
+                      alt="Wedding photo 11"
+                      className="w-full h-72 md:h-[26rem] object-cover rounded-3xl shadow-warm transition-all duration-300"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="pl-2 md:pl-4 basis-3/4 md:basis-4/5">
+                  <div className="p-1">
+                    <img 
+                      src={ps12} 
+                      alt="Wedding photo 12"
                       className="w-full h-72 md:h-[26rem] object-cover rounded-3xl shadow-warm transition-all duration-300"
                     />
                   </div>
