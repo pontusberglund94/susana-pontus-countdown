@@ -104,69 +104,6 @@ const Index = () => {
         </div>
       </section>
 
-
-      {/* Love Story Section */}
-      <section id="story" className="py-20 px-4 bg-cream/30">
-        <div className="max-w-4xl mx-auto text-center">
-          <FloralDivider />
-          
-          {/* Couple photos */}
-          <div className="grid md:grid-cols-2 gap-8 mt-12 max-w-4xl mx-auto">
-            <div className="animate-bounce-in" style={{ animationDelay: '0.6s' }}>
-              <img 
-                src={couplePortrait} 
-                alt="Couple portrait"
-                className="w-full h-80 object-cover rounded-3xl shadow-warm"
-              />
-            </div>
-            <div className="animate-bounce-in" style={{ animationDelay: '0.8s' }}>
-              <img 
-                src={coupleDancing} 
-                alt="Couple dancing"
-                className="w-full h-80 object-cover rounded-3xl shadow-warm"
-              />
-            </div>
-          </div>
-          
-          <FloralDivider />
-        </div>
-      </section>
-
-       {/* Karusell Story Section */}
-      <section id="story2" className="py-20 px-4 bg-cream/30">
-        <div className="max-w-4xl mx-auto text-center">
-          <FloralDivider />
-          
-          {/* Couple photos carousel */}
-          <div className="mt-12 max-w-3xl mx-auto">
-            <Carousel
-              opts={{
-                align: "start",
-                loop: true,
-              }}
-              className="w-full"
-            >
-              <CarouselContent>
-                {psImages.map((image, index) => (
-                  <CarouselItem key={index}>
-                    <img 
-                      src={image} 
-                      alt={`Wedding photo ${index + 1}`}
-                      className="w-full h-96 object-cover rounded-3xl shadow-warm"
-                    />
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="left-4" />
-              <CarouselNext className="right-4" />
-            </Carousel>
-          </div>
-          
-          <FloralDivider />
-        </div>
-      </section>
-
-
       {/* Karusell 2.0 Story Section */}
       <section id="story3" className="py-20 px-4 bg-cream/30">
         <div className="max-w-6xl mx-auto text-center">
@@ -536,43 +473,6 @@ const Index = () => {
               <p className="text-muted-foreground">
                 {t('info.gifts.description')}
               </p>
-            </div>
-          </div>
-          
-          <FloralDivider />
-        </div>
-      </section>
-
-      {/* Photos Section */}
-      <section id="photos" className="py-20 px-4 bg-gradient-earth">
-        <div className="max-w-6xl mx-auto text-center">
-          <FloralDivider />
-          
-          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary mb-16 animate-bounce-in">
-            {t('nav.photos')}
-          </h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="animate-bounce-in" style={{ animationDelay: '0.2s' }}>
-              <img 
-                src={coupleBeachWalk} 
-                alt="Couple beach walk"
-                className="w-full h-64 object-cover rounded-3xl shadow-warm hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="animate-bounce-in" style={{ animationDelay: '0.4s' }}>
-              <img 
-                src={couplePortrait} 
-                alt="Couple portrait"
-                className="w-full h-64 object-cover rounded-3xl shadow-warm hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="animate-bounce-in" style={{ animationDelay: '0.6s' }}>
-              <img 
-                src={coupleDancing} 
-                alt="Couple dancing"
-                className="w-full h-64 object-cover rounded-3xl shadow-warm hover:scale-105 transition-transform duration-300"
-              />
             </div>
           </div>
           
