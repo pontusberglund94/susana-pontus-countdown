@@ -323,7 +323,7 @@ const Index = () => {
       </section>
 
       {/* Mallorca Info Section */}
-      <section className="py-20 px-4 bg-cream/30">
+      <section className="py-20 px-4 bg-sage/10">
         <div className="max-w-6xl mx-auto">
           <FloralDivider />
           
