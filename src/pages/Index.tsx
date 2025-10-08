@@ -285,7 +285,7 @@ const Index = () => {
               {t('transportation.busDescription')}
             </p>
             <div className="bg-accent/10 rounded-2xl p-4">
-              <p className="font-semibold text-accent">
+              <p className="font-semibold text-terracotta">
                 {t('transportation.busTime')}
               </p>
             </div>
