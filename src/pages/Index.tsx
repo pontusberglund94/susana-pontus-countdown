@@ -9,6 +9,10 @@ import coupleDancing from '@/assets/couple-dancing.jpg';
 import coupleBeachWalk from '@/assets/couple-beach-walk.jpg';
 import { Wine, Cookie, UtensilsCrossed, Sandwich, Moon, Bus, Shirt, Baby, Gift } from 'lucide-react';
 import solivaretPool from '@/assets/solivaret_pool.jpg';
+import paradisiskaStrander from '@/assets/paradisiska_strander.jpg';
+import kulturelltArv from '@/assets/kulturellt_arv.jpg';
+import lokalGastronomi from '@/assets/lokal_gastronomi.jpg';
+import vildNatur from '@/assets/vild_natur.jpg';
 
 // Import ps images for carousels
 import ps1 from '@/assets/ps (1).jpg';
@@ -333,55 +337,79 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Beaches */}
-            <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-6 shadow-warm animate-bounce-in" style={{ animationDelay: '0.2s' }}>
-              <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
-                </svg>
+            <div className="relative rounded-3xl p-6 shadow-warm animate-bounce-in overflow-hidden" style={{ animationDelay: '0.2s' }}>
+              <div className="absolute inset-0">
+                <img src={paradisiskaStrander} alt="Beaches" className="w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/70 to-primary/80 backdrop-blur-[2px]"></div>
               </div>
-              <h3 className="font-serif text-xl font-semibold text-primary mb-3 text-center">{t('mallorca.beaches.title')}</h3>
-              <p className="text-sm text-muted-foreground text-center">
-                {t('mallorca.beaches.description')}
-              </p>
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                  </svg>
+                </div>
+                <h3 className="font-serif text-xl font-semibold text-white mb-3 text-center">{t('mallorca.beaches.title')}</h3>
+                <p className="text-sm text-white/90 text-center">
+                  {t('mallorca.beaches.description')}
+                </p>
+              </div>
             </div>
 
             {/* Culture */}
-            <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-6 shadow-warm animate-bounce-in" style={{ animationDelay: '0.4s' }}>
-              <div className="w-16 h-16 bg-terracotta/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
+            <div className="relative rounded-3xl p-6 shadow-warm animate-bounce-in overflow-hidden" style={{ animationDelay: '0.4s' }}>
+              <div className="absolute inset-0">
+                <img src={kulturelltArv} alt="Culture" className="w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/70 to-primary/80 backdrop-blur-[2px]"></div>
               </div>
-              <h3 className="font-serif text-xl font-semibold text-primary mb-3 text-center">{t('mallorca.culture.title')}</h3>
-              <p className="text-sm text-muted-foreground text-center">
-                {t('mallorca.culture.description')}
-              </p>
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                </div>
+                <h3 className="font-serif text-xl font-semibold text-white mb-3 text-center">{t('mallorca.culture.title')}</h3>
+                <p className="text-sm text-white/90 text-center">
+                  {t('mallorca.culture.description')}
+                </p>
+              </div>
             </div>
 
             {/* Gastronomy */}
-            <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-6 shadow-warm animate-bounce-in" style={{ animationDelay: '0.6s' }}>
-              <div className="w-16 h-16 bg-olive/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-olive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
-                </svg>
+            <div className="relative rounded-3xl p-6 shadow-warm animate-bounce-in overflow-hidden" style={{ animationDelay: '0.6s' }}>
+              <div className="absolute inset-0">
+                <img src={lokalGastronomi} alt="Gastronomy" className="w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/70 to-primary/80 backdrop-blur-[2px]"></div>
               </div>
-              <h3 className="font-serif text-xl font-semibold text-primary mb-3 text-center">{t('mallorca.gastronomy.title')}</h3>
-              <p className="text-sm text-muted-foreground text-center">
-                {t('mallorca.gastronomy.description')}
-              </p>
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                  </svg>
+                </div>
+                <h3 className="font-serif text-xl font-semibold text-white mb-3 text-center">{t('mallorca.gastronomy.title')}</h3>
+                <p className="text-sm text-white/90 text-center">
+                  {t('mallorca.gastronomy.description')}
+                </p>
+              </div>
             </div>
 
             {/* Nature */}
-            <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-6 shadow-warm animate-bounce-in" style={{ animationDelay: '0.8s' }}>
-              <div className="w-16 h-16 bg-sage/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                </svg>
+            <div className="relative rounded-3xl p-6 shadow-warm animate-bounce-in overflow-hidden" style={{ animationDelay: '0.8s' }}>
+              <div className="absolute inset-0">
+                <img src={vildNatur} alt="Nature" className="w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/70 to-primary/80 backdrop-blur-[2px]"></div>
               </div>
-              <h3 className="font-serif text-xl font-semibold text-primary mb-3 text-center">{t('mallorca.nature.title')}</h3>
-              <p className="text-sm text-muted-foreground text-center">
-                {t('mallorca.nature.description')}
-              </p>
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                  </svg>
+                </div>
+                <h3 className="font-serif text-xl font-semibold text-white mb-3 text-center">{t('mallorca.nature.title')}</h3>
+                <p className="text-sm text-white/90 text-center">
+                  {t('mallorca.nature.description')}
+                </p>
+              </div>
             </div>
 
             {/* Activities */}
