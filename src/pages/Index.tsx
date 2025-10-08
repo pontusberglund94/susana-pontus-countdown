@@ -340,7 +340,7 @@ const Index = () => {
             <div className="relative rounded-3xl p-6 shadow-warm animate-bounce-in overflow-hidden" style={{ animationDelay: '0.2s' }}>
               <div className="absolute inset-0">
                 <img src={paradisiskaStrander} alt="Beaches" className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-b from-primary/70 to-primary/80 backdrop-blur-[2px]"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"></div>
               </div>
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -359,7 +359,7 @@ const Index = () => {
             <div className="relative rounded-3xl p-6 shadow-warm animate-bounce-in overflow-hidden" style={{ animationDelay: '0.4s' }}>
               <div className="absolute inset-0">
                 <img src={kulturelltArv} alt="Culture" className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-b from-primary/70 to-primary/80 backdrop-blur-[2px]"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"></div>
               </div>
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -378,7 +378,7 @@ const Index = () => {
             <div className="relative rounded-3xl p-6 shadow-warm animate-bounce-in overflow-hidden" style={{ animationDelay: '0.6s' }}>
               <div className="absolute inset-0">
                 <img src={lokalGastronomi} alt="Gastronomy" className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-b from-primary/70 to-primary/80 backdrop-blur-[2px]"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"></div>
               </div>
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -397,7 +397,7 @@ const Index = () => {
             <div className="relative rounded-3xl p-6 shadow-warm animate-bounce-in overflow-hidden" style={{ animationDelay: '0.8s' }}>
               <div className="absolute inset-0">
                 <img src={vildNatur} alt="Nature" className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-b from-primary/70 to-primary/80 backdrop-blur-[2px]"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"></div>
               </div>
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-6">
