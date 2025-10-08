@@ -13,7 +13,6 @@ import solivaretPool from '@/assets/solivaret_pool.jpg';
 // Import ps images for carousels
 import ps1 from '@/assets/ps (1).jpg';
 import ps2 from '@/assets/ps (2).jpg';
-import ps3 from '@/assets/ps (3).jpg';
 import ps4 from '@/assets/ps (4).jpg';
 import ps5 from '@/assets/ps (5).jpg';
 import ps6 from '@/assets/ps (6).jpg';
@@ -36,13 +35,11 @@ import ps23 from '@/assets/ps (23).jpg';
 import ps24 from '@/assets/ps (24).jpg';
 import ps25 from '@/assets/ps (25).jpg';
 import ps26 from '@/assets/ps (26).jpg';
-import ps27 from '@/assets/ps (27).jpg';
 import ps28 from '@/assets/ps (28).jpg';
 import ps29 from '@/assets/ps (29).jpg';
 import ps30 from '@/assets/ps (30).jpg';
 import ps31 from '@/assets/ps (31).jpg';
 import ps32 from '@/assets/ps (32).jpg';
-import ps33 from '@/assets/ps (33).jpg';
 import ps34 from '@/assets/ps (34).jpg';
 import ps35 from '@/assets/ps (35).jpg';
 import ps36 from '@/assets/ps (36).jpg';
@@ -50,10 +47,8 @@ import ps37 from '@/assets/ps (37).jpg';
 import ps38 from '@/assets/ps (38).jpg';
 import ps39 from '@/assets/ps (39).jpg';
 import ps40 from '@/assets/ps (40).jpg';
-import ps41 from '@/assets/ps (41).jpg';
-import ps42 from '@/assets/ps (42).jpg';
 
-const psImages = [ps1, ps2, ps3, ps4, ps5, ps6, ps7, ps8, ps9, ps10, ps11, ps12, ps13, ps14, ps15, ps16, ps17, ps18, ps20, ps21, ps22, ps23, ps24, ps25, ps26, ps27, ps28, ps29, ps30, ps31, ps32, ps33, ps34, ps35, ps36, ps37, ps38, ps39, ps40, ps41, ps42];
+const psImages = [ps1, ps2, ps4, ps5, ps6, ps7, ps8, ps9, ps10, ps11, ps12, ps13, ps14, ps15, ps16, ps17, ps18, ps20, ps21, ps22, ps23, ps24, ps25, ps26, ps28, ps29, ps30, ps31, ps32, ps34, ps35, ps36, ps37, ps38, ps39, ps40];
 
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
