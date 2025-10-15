@@ -272,7 +272,7 @@ const Index = () => {
       </section>
 
       {/* Transportation Section */}
-      <section className="py-20 px-4 bg-gradient-earth">
+      <section id="transportation" className="py-20 px-4 bg-gradient-earth">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary mb-16 animate-bounce-in">
             {t('transportation.title')}

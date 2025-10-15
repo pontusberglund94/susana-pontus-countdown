@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Heart, Calendar, MapPin, Home, Users, Camera } from 'lucide-react';
+import { Menu, X, Calendar, MapPin, Home, Users, Bus } from 'lucide-react';
 
 const Navigation = () => {
   const { t } = useLanguage();
@@ -9,12 +9,11 @@ const Navigation = () => {
 
   const navigationItems = [
     { key: 'home', label: t('nav.home'), icon: Home, href: '#hero' },
-    { key: 'story', label: t('nav.story'), icon: Heart, href: '#story' },
     { key: 'schedule', label: t('nav.schedule'), icon: Calendar, href: '#schedule' },
-    { key: 'location', label: t('nav.location'), icon: MapPin, href: '#location' },
     { key: 'accommodation', label: t('nav.accommodation'), icon: Home, href: '#accommodation' },
+    { key: 'transportation', label: t('nav.transportation'), icon: Bus, href: '#transportation' },
+    { key: 'location', label: t('nav.location'), icon: MapPin, href: '#location' },
     { key: 'rsvp', label: t('nav.rsvp'), icon: Users, href: '#rsvp' },
-    { key: 'photos', label: t('nav.photos'), icon: Camera, href: '#photos' },
   ];
 
   const scrollToSection = (href: string) => {
