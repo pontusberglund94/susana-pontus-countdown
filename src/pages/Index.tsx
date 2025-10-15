@@ -335,19 +335,14 @@ const Index = () => {
             {t('mallorca.title')}
           </h2>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Beaches */}
-            <div className="relative rounded-3xl p-6 shadow-warm animate-bounce-in overflow-hidden" style={{ animationDelay: '0.2s' }}>
+            <div className="relative rounded-3xl p-6 shadow-warm animate-bounce-in overflow-hidden aspect-[4/5]" style={{ animationDelay: '0.2s' }}>
               <div className="absolute inset-0">
                 <img src={paradisiskaStrander} alt="Beaches" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"></div>
               </div>
-              <div className="relative z-10">
-                <div className="w-16 h-16 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
-                  </svg>
-                </div>
+              <div className="relative z-10 h-full flex flex-col justify-end">
                 <h3 className="font-serif text-xl font-semibold text-white mb-3 text-center">{t('mallorca.beaches.title')}</h3>
                 <p className="text-sm text-white/90 text-center">
                   {t('mallorca.beaches.description')}
@@ -356,17 +351,12 @@ const Index = () => {
             </div>
 
             {/* Culture */}
-            <div className="relative rounded-3xl p-6 shadow-warm animate-bounce-in overflow-hidden" style={{ animationDelay: '0.4s' }}>
+            <div className="relative rounded-3xl p-6 shadow-warm animate-bounce-in overflow-hidden aspect-[4/5]" style={{ animationDelay: '0.4s' }}>
               <div className="absolute inset-0">
                 <img src={kulturelltArv} alt="Culture" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"></div>
               </div>
-              <div className="relative z-10">
-                <div className="w-16 h-16 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                  </svg>
-                </div>
+              <div className="relative z-10 h-full flex flex-col justify-end">
                 <h3 className="font-serif text-xl font-semibold text-white mb-3 text-center">{t('mallorca.culture.title')}</h3>
                 <p className="text-sm text-white/90 text-center">
                   {t('mallorca.culture.description')}
@@ -375,17 +365,12 @@ const Index = () => {
             </div>
 
             {/* Gastronomy */}
-            <div className="relative rounded-3xl p-6 shadow-warm animate-bounce-in overflow-hidden" style={{ animationDelay: '0.6s' }}>
+            <div className="relative rounded-3xl p-6 shadow-warm animate-bounce-in overflow-hidden aspect-[4/5]" style={{ animationDelay: '0.6s' }}>
               <div className="absolute inset-0">
                 <img src={lokalGastronomi} alt="Gastronomy" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"></div>
               </div>
-              <div className="relative z-10">
-                <div className="w-16 h-16 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
-                  </svg>
-                </div>
+              <div className="relative z-10 h-full flex flex-col justify-end">
                 <h3 className="font-serif text-xl font-semibold text-white mb-3 text-center">{t('mallorca.gastronomy.title')}</h3>
                 <p className="text-sm text-white/90 text-center">
                   {t('mallorca.gastronomy.description')}
@@ -394,48 +379,17 @@ const Index = () => {
             </div>
 
             {/* Nature */}
-            <div className="relative rounded-3xl p-6 shadow-warm animate-bounce-in overflow-hidden" style={{ animationDelay: '0.8s' }}>
+            <div className="relative rounded-3xl p-6 shadow-warm animate-bounce-in overflow-hidden aspect-[4/5]" style={{ animationDelay: '0.8s' }}>
               <div className="absolute inset-0">
                 <img src={vildNatur} alt="Nature" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"></div>
               </div>
-              <div className="relative z-10">
-                <div className="w-16 h-16 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                  </svg>
-                </div>
+              <div className="relative z-10 h-full flex flex-col justify-end">
                 <h3 className="font-serif text-xl font-semibold text-white mb-3 text-center">{t('mallorca.nature.title')}</h3>
                 <p className="text-sm text-white/90 text-center">
                   {t('mallorca.nature.description')}
                 </p>
               </div>
-            </div>
-
-            {/* Activities */}
-            <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-6 shadow-warm animate-bounce-in" style={{ animationDelay: '1.0s' }}>
-              <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="font-serif text-xl font-semibold text-primary mb-3 text-center">{t('mallorca.activities.title')}</h3>
-              <p className="text-sm text-muted-foreground text-center">
-                {t('mallorca.activities.description')}
-              </p>
-            </div>
-
-            {/* Relaxation */}
-            <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-6 shadow-warm animate-bounce-in" style={{ animationDelay: '1.2s' }}>
-              <div className="w-16 h-16 bg-terracotta-light/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-terracotta-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-              </div>
-              <h3 className="font-serif text-xl font-semibold text-primary mb-3 text-center">{t('mallorca.relaxation.title')}</h3>
-              <p className="text-sm text-muted-foreground text-center">
-                {t('mallorca.relaxation.description')}
-              </p>
             </div>
           </div>
           
