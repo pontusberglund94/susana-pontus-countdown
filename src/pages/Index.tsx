@@ -11,7 +11,7 @@ import { Wine, Cookie, UtensilsCrossed, Sandwich, Moon, Bus, Shirt, Baby, Gift }
 import solivaretPool from '@/assets/solivaret_pool.jpg';
 import paradisiskaStrander from '@/assets/paradisiska_strander.jpg';
 import kulturelltArv from '@/assets/kulturellt_arv.jpg';
-import lokalGastronomi from '@/assets/lokal_gastronomi.jpg';
+import lokalGastronomi from '@/assets/lokal_gastronomi_new.jpg';
 import vildNatur from '@/assets/vild_natur.jpg';
 
 // Import ps images for carousels
@@ -337,58 +337,58 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Beaches */}
-            <div className="relative rounded-3xl p-6 shadow-warm animate-bounce-in overflow-hidden aspect-[4/5]" style={{ animationDelay: '0.2s' }}>
-              <div className="absolute inset-0">
+            <div className="relative rounded-3xl shadow-warm animate-bounce-in overflow-hidden" style={{ animationDelay: '0.2s' }}>
+              <div className="relative h-72 md:h-[26rem]">
                 <img src={paradisiskaStrander} alt="Beaches" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"></div>
-              </div>
-              <div className="relative z-10 h-full flex flex-col justify-end">
-                <h3 className="font-serif text-xl font-semibold text-white mb-3 text-center">{t('mallorca.beaches.title')}</h3>
-                <p className="text-sm text-white/90 text-center">
-                  {t('mallorca.beaches.description')}
-                </p>
+                <div className="absolute inset-0 flex flex-col justify-end p-6">
+                  <h3 className="font-serif text-xl font-semibold text-white mb-3 text-center">{t('mallorca.beaches.title')}</h3>
+                  <p className="text-sm text-white/90 text-center">
+                    {t('mallorca.beaches.description')}
+                  </p>
+                </div>
               </div>
             </div>
 
             {/* Culture */}
-            <div className="relative rounded-3xl p-6 shadow-warm animate-bounce-in overflow-hidden aspect-[4/5]" style={{ animationDelay: '0.4s' }}>
-              <div className="absolute inset-0">
+            <div className="relative rounded-3xl shadow-warm animate-bounce-in overflow-hidden" style={{ animationDelay: '0.4s' }}>
+              <div className="relative h-72 md:h-[26rem]">
                 <img src={kulturelltArv} alt="Culture" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"></div>
-              </div>
-              <div className="relative z-10 h-full flex flex-col justify-end">
-                <h3 className="font-serif text-xl font-semibold text-white mb-3 text-center">{t('mallorca.culture.title')}</h3>
-                <p className="text-sm text-white/90 text-center">
-                  {t('mallorca.culture.description')}
-                </p>
+                <div className="absolute inset-0 flex flex-col justify-end p-6">
+                  <h3 className="font-serif text-xl font-semibold text-white mb-3 text-center">{t('mallorca.culture.title')}</h3>
+                  <p className="text-sm text-white/90 text-center">
+                    {t('mallorca.culture.description')}
+                  </p>
+                </div>
               </div>
             </div>
 
             {/* Gastronomy */}
-            <div className="relative rounded-3xl p-6 shadow-warm animate-bounce-in overflow-hidden aspect-[4/5]" style={{ animationDelay: '0.6s' }}>
-              <div className="absolute inset-0">
+            <div className="relative rounded-3xl shadow-warm animate-bounce-in overflow-hidden" style={{ animationDelay: '0.6s' }}>
+              <div className="relative h-72 md:h-[26rem]">
                 <img src={lokalGastronomi} alt="Gastronomy" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"></div>
-              </div>
-              <div className="relative z-10 h-full flex flex-col justify-end">
-                <h3 className="font-serif text-xl font-semibold text-white mb-3 text-center">{t('mallorca.gastronomy.title')}</h3>
-                <p className="text-sm text-white/90 text-center">
-                  {t('mallorca.gastronomy.description')}
-                </p>
+                <div className="absolute inset-0 flex flex-col justify-end p-6">
+                  <h3 className="font-serif text-xl font-semibold text-white mb-3 text-center">{t('mallorca.gastronomy.title')}</h3>
+                  <p className="text-sm text-white/90 text-center">
+                    {t('mallorca.gastronomy.description')}
+                  </p>
+                </div>
               </div>
             </div>
 
             {/* Nature */}
-            <div className="relative rounded-3xl p-6 shadow-warm animate-bounce-in overflow-hidden aspect-[4/5]" style={{ animationDelay: '0.8s' }}>
-              <div className="absolute inset-0">
+            <div className="relative rounded-3xl shadow-warm animate-bounce-in overflow-hidden" style={{ animationDelay: '0.8s' }}>
+              <div className="relative h-72 md:h-[26rem]">
                 <img src={vildNatur} alt="Nature" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"></div>
-              </div>
-              <div className="relative z-10 h-full flex flex-col justify-end">
-                <h3 className="font-serif text-xl font-semibold text-white mb-3 text-center">{t('mallorca.nature.title')}</h3>
-                <p className="text-sm text-white/90 text-center">
-                  {t('mallorca.nature.description')}
-                </p>
+                <div className="absolute inset-0 flex flex-col justify-end p-6">
+                  <h3 className="font-serif text-xl font-semibold text-white mb-3 text-center">{t('mallorca.nature.title')}</h3>
+                  <p className="text-sm text-white/90 text-center">
+                    {t('mallorca.nature.description')}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
