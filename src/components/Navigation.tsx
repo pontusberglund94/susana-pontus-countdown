@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Calendar, MapPin, Home, Users, Bus } from 'lucide-react';
+import { Menu, X, Calendar, MapPin, Home, Users, Bus, Palmtree, Info } from 'lucide-react';
 
 const Navigation = () => {
   const { t } = useLanguage();
@@ -13,6 +13,8 @@ const Navigation = () => {
     { key: 'accommodation', label: t('nav.accommodation'), icon: Home, href: '#accommodation' },
     { key: 'transportation', label: t('nav.transportation'), icon: Bus, href: '#transportation' },
     { key: 'location', label: t('nav.location'), icon: MapPin, href: '#location' },
+    { key: 'mallorca', label: t('nav.mallorca'), icon: Palmtree, href: '#mallorca' },
+    { key: 'info', label: t('nav.info'), icon: Info, href: '#info' },
     { key: 'rsvp', label: t('nav.rsvp'), icon: Users, href: '#rsvp' },
   ];
 

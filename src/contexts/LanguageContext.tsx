@@ -18,6 +18,9 @@ const translations = {
     'nav.schedule': 'Bröllopsdagen',
     'nav.location': 'Plats',
     'nav.accommodation': 'Boende',
+    'nav.transportation': 'Transport',
+    'nav.mallorca': 'Upptäck Mallorca',
+    'nav.info': 'Övrig Information',
     'nav.rsvp': 'OSA',
     'nav.photos': 'Foton',
     
@@ -113,6 +116,9 @@ const translations = {
     'nav.schedule': 'Programa',
     'nav.location': 'Ubicación',
     'nav.accommodation': 'Alojamiento',
+    'nav.transportation': 'Transporte',
+    'nav.mallorca': 'Descubre Mallorca',
+    'nav.info': 'Información Adicional',
     'nav.rsvp': 'Confirmar',
     'nav.photos': 'Fotos',
     
@@ -208,6 +214,9 @@ const translations = {
     'nav.schedule': 'The Wedding Day', 
     'nav.location': 'Location',
     'nav.accommodation': 'Stay',
+    'nav.transportation': 'Transportation',
+    'nav.mallorca': 'Discover Mallorca',
+    'nav.info': 'Additional Info',
     'nav.rsvp': 'RSVP',
     'nav.photos': 'Photos',
     
