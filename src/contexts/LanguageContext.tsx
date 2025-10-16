@@ -160,7 +160,7 @@ const translations = {
     // Transportation
     'transportation.title': 'Transporte',
     'transportation.bus': 'Autobús a Palma',
-    'transportation.busDescription': 'Un autobús saldrá desde el lugar de la fiesta hacia Palma al final de la celebración.',
+    'transportation.busDescription': 'Para los invitados que no se alojen en el hotel, habrá un autobús reservado hacia Palma después de la fiesta de boda. Indica en el formulario de confirmación si quieres viajar en el autobús para que sepamos el tamaño del autobús que debemos reservar.',
     'transportation.busTime': 'Salida a las 23:30',
     
     // Map
@@ -258,7 +258,7 @@ const translations = {
     // Transportation
     'transportation.title': 'Transportation',
     'transportation.bus': 'Bus to Palma',
-    'transportation.busDescription': 'A bus will depart from the party venue to Palma at the end of the celebration.',
+    'transportation.busDescription': 'For guests not staying at the hotel, a chartered bus will depart towards Palma after the wedding party. Please indicate in the RSVP form if you would like to take the bus so we know what size bus to charter.',
     'transportation.busTime': 'Departure at 11:30 PM',
     
     // Map
