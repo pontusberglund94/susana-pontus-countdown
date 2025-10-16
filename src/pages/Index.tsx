@@ -414,16 +414,49 @@ const Index = () => {
           
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {/* Dress Code */}
-            <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-8 shadow-warm animate-bounce-in text-center" style={{ animationDelay: '0.2s' }}>
+            <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-8 shadow-warm animate-bounce-in md:col-span-3" style={{ animationDelay: '0.2s' }}>
               <div className="w-16 h-16 bg-terracotta/20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Shirt className="w-8 h-8 text-terracotta" />
               </div>
-              <h3 className="font-serif text-2xl font-semibold text-primary mb-4">
+              <h3 className="font-serif text-2xl font-semibold text-primary mb-4 text-center">
                 {t('info.dresscode.title')}
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-xl font-semibold text-center mb-6 text-primary">
                 {t('info.dresscode.description')}
               </p>
+              <p className="text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+                {t('info.dresscode.details')}
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-8">
+                {/* For Men */}
+                <div className="text-left">
+                  <h4 className="font-serif text-xl font-semibold text-primary mb-4">
+                    {t('info.dresscode.men.title')}
+                  </h4>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li>• {t('info.dresscode.men.suit')}</li>
+                    <li>• {t('info.dresscode.men.shirt')}</li>
+                    <li>• {t('info.dresscode.men.tie')}</li>
+                    <li>• {t('info.dresscode.men.shoes')}</li>
+                    <li>• {t('info.dresscode.men.other')}</li>
+                  </ul>
+                </div>
+                
+                {/* For Women */}
+                <div className="text-left">
+                  <h4 className="font-serif text-xl font-semibold text-primary mb-4">
+                    {t('info.dresscode.women.title')}
+                  </h4>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li>• {t('info.dresscode.women.dress')}</li>
+                    <li>• {t('info.dresscode.women.skirt')}</li>
+                    <li>• {t('info.dresscode.women.suit')}</li>
+                    <li>• {t('info.dresscode.women.shoes')}</li>
+                    <li>• {t('info.dresscode.women.other')}</li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
             {/* Kids */}
