@@ -495,10 +495,6 @@ const Index = () => {
           </p>
           
           <FloralDivider className="mt-8" />
-          
-          <p className="text-sm opacity-70 mt-4">
-            {new Date().getFullYear()} • {t('footer.madeWithLove')}
-          </p>
         </div>
       </footer>
     </div>
