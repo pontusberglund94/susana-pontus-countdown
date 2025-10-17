@@ -7,7 +7,8 @@ import heroImage from '@/assets/wedding-hero.jpg';
 import couplePortrait from '@/assets/couple-portrait-1.jpg';
 import coupleDancing from '@/assets/couple-dancing.jpg';
 import coupleBeachWalk from '@/assets/couple-beach-walk.jpg';
-import { Wine, Cookie, UtensilsCrossed, Sandwich, Moon, Bus, Shirt, Baby, Gift } from 'lucide-react';
+import { Wine, Cookie, UtensilsCrossed, Sandwich, Moon, Bus, Shirt, Baby, Gift, Copy } from 'lucide-react';
+import { toast } from '@/hooks/use-toast';
 import solivaretPool from '@/assets/solivaret_pool.jpg';
 import paradisiskaStrander from '@/assets/paradisiska_strander.jpg';
 import kulturelltArv from '@/assets/kulturellt_arv.jpg';
@@ -62,6 +63,14 @@ const Index = () => {
   const { t } = useLanguage();
   // Wedding date: April 18, 2026
   const weddingDate = new Date('2026-04-18T13:00:00');
+
+  const copyToClipboard = (code: string) => {
+    navigator.clipboard.writeText(code);
+    toast({
+      title: "Copied!",
+      description: `${code} copied to clipboard`,
+    });
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -251,12 +260,28 @@ const Index = () => {
             </p>
             <div className="space-y-4">
               <div className="bg-primary/20 backdrop-blur-sm rounded-2xl p-4">
-                <p className="font-bold text-primary mb-2 [text-shadow:_1px_1px_4px_rgb(255_255_255_/_90%)]">
+                <p className="font-bold text-primary mb-4 [text-shadow:_1px_1px_4px_rgb(255_255_255_/_90%)]">
                   {t('accommodation.discountCode')}
                 </p>
-                <p className="text-sm text-foreground font-semibold [text-shadow:_1px_1px_4px_rgb(255_255_255_/_90%)]">
-                  {t('accommodation.singleNight')}
-                </p>
+                <div className="space-y-2">
+                  <button
+                    onClick={() => copyToClipboard('WEDDINGSUSANAPONTUS10')}
+                    className="w-full flex items-center justify-between gap-2 bg-white/60 hover:bg-white/80 transition-colors rounded-lg p-3 group"
+                  >
+                    <span className="text-sm font-mono font-semibold text-primary">WEDDINGSUSANAPONTUS10</span>
+                    <Copy className="w-4 h-4 text-primary group-hover:scale-110 transition-transform" />
+                  </button>
+                  <button
+                    onClick={() => copyToClipboard('WEDDINGSUSANAPONTUS20')}
+                    className="w-full flex items-center justify-between gap-2 bg-white/60 hover:bg-white/80 transition-colors rounded-lg p-3 group"
+                  >
+                    <span className="text-sm font-mono font-semibold text-primary">WEDDINGSUSANAPONTUS20</span>
+                    <Copy className="w-4 h-4 text-primary group-hover:scale-110 transition-transform" />
+                  </button>
+                  <p className="text-xs text-foreground/80 [text-shadow:_1px_1px_4px_rgb(255_255_255_/_90%)] text-center pt-2">
+                    {t('accommodation.singleNight')}
+                  </p>
+                </div>
               </div>
               <button 
                 className="bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:bg-primary/90 transition-colors shadow-lg"
