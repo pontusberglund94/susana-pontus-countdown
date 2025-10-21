@@ -449,9 +449,6 @@ const Index = () => {
               <p className="text-xl font-semibold text-center mb-6 text-primary">
                 {t('info.dresscode.description')}
               </p>
-              <p className="text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
-                {t('info.dresscode.details')}
-              </p>
               
               <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-8">
                 {/* For Men */}
