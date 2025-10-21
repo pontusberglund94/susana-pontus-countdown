@@ -71,7 +71,7 @@ const translations = {
     
     // RSVP
     'rsvp.title': 'Bekräfta din Närvaro',
-    'rsvp.description': 'Din närvaro är den mest värdefulla gåvan. Vänligen bekräfta din närvaro genom att fylla i följande formulär.',
+    'rsvp.description': 'Din närvaro är den mest värdefulla gåvan. Vänligen bekräfta din närvaro senast 2025-12-10 genom att fylla i följande formulär.',
     
     // Additional Information
     'info.title': 'Övrig Information',
@@ -182,7 +182,7 @@ const translations = {
     
     // RSVP
     'rsvp.title': 'Confirma tu Asistencia',
-    'rsvp.description': 'Tu presencia es el regalo más valioso. Por favor, confirma tu asistencia completando el siguiente formulario.',
+    'rsvp.description': 'Tu presencia es el regalo más valioso. Por favor, confirma tu asistencia antes del 2025-12-10 completando el siguiente formulario.',
     
     // Additional Information
     'info.title': 'Información Adicional',
@@ -293,7 +293,7 @@ const translations = {
     
     // RSVP
     'rsvp.title': 'Confirm Your Attendance',
-    'rsvp.description': 'Your presence is the most valuable gift. Please confirm your attendance by completing the following form.',
+    'rsvp.description': 'Your presence is the most valuable gift. Please confirm your attendance before 2025-12-10 by completing the following form.',
     
     // Additional Information
     'info.title': 'Additional Information',
