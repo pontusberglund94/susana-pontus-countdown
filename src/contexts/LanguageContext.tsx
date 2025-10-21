@@ -91,7 +91,7 @@ const translations = {
     'info.dresscode.women.shoes': 'Skor: Välj finare skor än dina vardagsskor, som klackskor eller ballerinaskor.',
     'info.dresscode.women.other': 'Övrigt: Accessoarer som smycken kan komplettera din look.',
     'info.kids.title': 'Barn',
-    'info.kids.description': 'Vi tror att gästerna kommer att njuta mer av bröllopet om det är barnfritt. Vi förstår dock att detta inte är möjligt för alla och barn är naturligtvis välkomna.',
+    'info.kids.description': 'Vi tror att som förälder kommer man njuta mer av bröllopet om man inte behöver passa sina barn. Vi förstår dock att detta inte är möjligt för alla och barn är naturligtvis välkomna.',
     'info.gifts.title': 'Bröllopsgåvor',
     'info.gifts.description': 'Vänligen inga fysiska presenter - vi har inte plats i våra väskor att ta hem dem till Sverige.',
     
