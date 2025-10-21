@@ -93,7 +93,7 @@ const translations = {
     'info.kids.title': 'Barn',
     'info.kids.description': 'Vi tror att som förälder kommer man njuta mer av bröllopet om man inte behöver passa sina barn. Vi förstår dock att detta inte är möjligt för alla och barn är naturligtvis välkomna.',
     'info.gifts.title': 'Bröllopsgåvor',
-    'info.gifts.description': 'Vänligen inga fysiska presenter - vi har inte plats i våra väskor att ta hem dem till Sverige.',
+    'info.gifts.description': 'Fysiska presenter undanbedes - vi har inte plats i våra resväskor! Er närvaro är den viktigaste presenten.',
     
     // Mallorca Info
     'mallorca.title': 'Upptäck Mallorca',
