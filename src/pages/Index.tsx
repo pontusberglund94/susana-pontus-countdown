@@ -47,7 +47,7 @@ import ps37 from '@/assets/ps (37).jpg';
 import ps39 from '@/assets/ps (39).jpg';
 import ps40 from '@/assets/ps (40).jpg';
 
-const psImages = [ps1, ps2, ps4, ps5, ps6, ps7, ps8, ps9, ps10, ps11, ps12, ps13, ps15, ps16, ps17, ps18, ps20, ps23, ps24, ps28, ps29, ps30, ps31, ps32, ps34, ps35, ps36, ps37, ps39, ps40];
+const psImages = [ps8, ps1, ps2, ps4, ps5, ps6, ps7, ps9, ps10, ps11, ps12, ps13, ps15, ps16, ps17, ps18, ps20, ps23, ps24, ps28, ps29, ps30, ps31, ps32, ps34, ps35, ps36, ps37, ps39, ps40];
 
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
