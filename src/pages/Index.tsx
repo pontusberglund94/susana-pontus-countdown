@@ -33,12 +33,8 @@ import ps16 from '@/assets/ps (16).jpg';
 import ps17 from '@/assets/ps (17).jpg';
 import ps18 from '@/assets/ps (18).jpg';
 import ps20 from '@/assets/ps (20).jpg';
-import ps21 from '@/assets/ps (21).jpg';
-import ps22 from '@/assets/ps (22).jpg';
 import ps23 from '@/assets/ps (23).jpg';
 import ps24 from '@/assets/ps (24).jpg';
-import ps25 from '@/assets/ps (25).jpg';
-import ps26 from '@/assets/ps (26).jpg';
 import ps28 from '@/assets/ps (28).jpg';
 import ps29 from '@/assets/ps (29).jpg';
 import ps30 from '@/assets/ps (30).jpg';
@@ -51,7 +47,7 @@ import ps37 from '@/assets/ps (37).jpg';
 import ps39 from '@/assets/ps (39).jpg';
 import ps40 from '@/assets/ps (40).jpg';
 
-const psImages = [ps1, ps2, ps4, ps5, ps6, ps7, ps8, ps9, ps10, ps11, ps12, ps13, ps15, ps16, ps17, ps18, ps20, ps21, ps22, ps23, ps24, ps25, ps26, ps28, ps29, ps30, ps31, ps32, ps34, ps35, ps36, ps37, ps39, ps40];
+const psImages = [ps1, ps2, ps4, ps5, ps6, ps7, ps8, ps9, ps10, ps11, ps12, ps13, ps15, ps16, ps17, ps18, ps20, ps23, ps24, ps28, ps29, ps30, ps31, ps32, ps34, ps35, ps36, ps37, ps39, ps40];
 
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
