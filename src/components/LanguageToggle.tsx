@@ -8,6 +8,7 @@ const LanguageToggle = () => {
   const languages: { code: Language; label: string; flag: string }[] = [
     { code: 'sv', label: 'Svenska', flag: '🇸🇪' },
     { code: 'es', label: 'Español', flag: '🇪🇸' },
+    { code: 'ca', label: 'Català', flag: '🏴' },
     { code: 'en', label: 'English', flag: '🇬🇧' },
   ];
 

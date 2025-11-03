@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
-export type Language = 'sv' | 'es' | 'en';
+export type Language = 'sv' | 'es' | 'en' | 'ca';
 
 interface LanguageContextType {
   language: Language;
@@ -343,6 +343,117 @@ const translations = {
     'footer.seeYouSoon': 'See you soon!',
     'footer.withLove': 'With lots of love,',
     'footer.madeWithLove': 'Made with ❤️ to celebrate our love',
+  },
+  ca: {
+    // Navigation
+    'nav.home': 'Inici',
+    'nav.story': 'La Nostra Història', 
+    'nav.schedule': 'Programa',
+    'nav.location': 'Ubicació',
+    'nav.accommodation': 'Allotjament',
+    'nav.transportation': 'Transport',
+    'nav.mallorca': 'Descobreix Mallorca',
+    'nav.info': 'Informació Adicional',
+    'nav.rsvp': 'Confirmar',
+    'nav.photos': 'Fotos',
+    
+    // Hero Section
+    'hero.weAreGettingMarried': 'Ens Casem',
+    'hero.date': '18 d\'Abril, 2026',
+    'hero.discoverMore': 'Descobreix més',
+    
+    // Love Story
+    'story.title': 'La Nostra Història',
+    'story.subtitle': 'Dos cors que es van trobar i van decidir bategar junts per sempre.',
+    'story.description': 'L\'amor veritable no té fi, i el nostre és la prova que els contes de fades sí que existeixen. T\'convidem a celebrar amb nosaltres aquest nou capítol de les nostres vides.',
+    
+    // Details/Schedule
+    'details.title': 'Programa del Dia',
+    'details.welcomedrink': 'Beguda de Benvinguda',
+    'details.ceremony': 'Cerimònia',
+    'details.aperitivo': 'Aperitiu',
+    'details.lunch': 'Banquet',
+    'details.party': 'Festa',
+    'details.lastDance': 'Refrigeri Nocturn',
+    'details.PartyOver': 'Tancament',
+    'details.welcomedrinkTime': '13:00',
+    'details.ceremonyTime': '13:30',
+    'details.aperitivoTime': '14:30',
+    'details.lunchTime': '16:00',
+    'details.partyTime': '18:00',
+    'details.lastDanceTime': '21:00',
+    'details.PartyOverTime': '23:00',
+    'details.location': 'S\'Olivaret, Mallorca',
+    
+    // Accommodation
+    'accommodation.title': 'Allotjament a l\'Hotel Rural S\'Olivaret & Spa',
+    'accommodation.description': 'Hi ha la possibilitat d\'allotjar-se a l\'Hotel Rural S\'Olivaret & Spa, que es troba al costat del lloc de la boda.',
+    'accommodation.discountCode': 'Codis de descompte',
+    'accommodation.singleNight': 'WEDDINGSUSANAPONTUS10 per 10% de descompte en 1 nit. WEDDINGSUSANAPONTUS20 per 20% de descompte en 2+ nits.',
+    'accommodation.visitWebsite': 'Reservar al web',
+    
+    // Transportation
+    'transportation.title': 'Transport',
+    'transportation.bus': 'Autobús a Palma',
+    'transportation.busDescription': 'Per als convidats que no s\'allotgin a l\'hotel, hi haurà un autobús reservat cap a Palma després de la festa de casament. Si us plau, indica al formulari de confirmació si vols viatjar amb l\'autobús perquè sapiguem la mida de l\'autobús que hem de reservar.',
+    'transportation.busTime': 'Sortida a les 23:30',
+    
+    // Map
+    'map.title': 'Ubicació de la Boda',
+    'map.clickToView': 'Fes clic per veure a Google Maps',
+    
+    // RSVP
+    'rsvp.title': 'Confirma la Teva Assistència',
+    'rsvp.description': 'La teva presència és el regal més valuós. Si us plau, confirma la teva assistència abans del 2025-12-10 completant el següent formulari.',
+    
+    // Additional Information
+    'info.title': 'Informació Adicional',
+    'info.dresscode.title': 'Codi de Vestimenta',
+    'info.dresscode.description': 'Vestit de cerimònia',
+    'info.dresscode.details': 'El codi de vestimenta "vestit de cerimònia" significa que has de portar un vestit complet, no només una jaqueta solta. És el menys estricte dels codis de vestimenta tradicionals i permet més variació en color i material que el "vestit fosc". Per als homes, això significa un vestit de qualsevol color, corbata o papallona, i sabates més elegants (marrons o negres). Per a les dones, es tracta d\'un vestit elegant, faldilla amb brusa o un vestit pantaló fi, amb una llargada que cobreixi els genolls.',
+    'info.dresscode.men.title': 'Per a homes',
+    'info.dresscode.men.suit': 'Vestit: Tria un vestit de qualsevol color, s\'animen colors més clars, però també funcionen vestits foscos i patrons discrets com ratlles.',
+    'info.dresscode.men.shirt': 'Camisa: Una camisa blanca o de color clar funciona bé. També pots atrevir-te amb una variant amb patró discret.',
+    'info.dresscode.men.tie': 'Corbata/Papallona: Porta una corbata o papallona.',
+    'info.dresscode.men.shoes': 'Sabates: Sabates de vestir en negre o marró són apropiades. Tant mocassins com oxfords funcionen.',
+    'info.dresscode.men.other': 'Altres: Es pot fer servir un mocador de butxaca.',
+    'info.dresscode.women.title': 'Per a dones',
+    'info.dresscode.women.dress': 'Vestit: Un vestit elegant que sigui almenys fins al genoll.',
+    'info.dresscode.women.skirt': 'Faldilla/Brusa: Una faldilla que sigui almenys fins al genoll, combinada amb una brusa o top elegant.',
+    'info.dresscode.women.suit': 'Vestit pantaló: Un vestit pantaló elegant és una bona alternativa.',
+    'info.dresscode.women.shoes': 'Sabates: Tria sabates més elegants que les teves sabates diàries, com a talons o ballarines.',
+    'info.dresscode.women.other': 'Altres: Accessoris com joies poden complementar el teu look.',
+    'info.kids.title': 'Nens',
+    'info.kids.description': 'Creiem que els convidats gaudiran més de la boda si és lliure de nens. No obstant això, entenem que això simplement no és possible per a alguns i els nens són, per descomptat, benvinguts.',
+    'info.gifts.title': 'Regals de Casament',
+    'info.gifts.description': 'Si us plau, no regals físics - no tenim espai a les nostres maletes per portar-los a Suècia.',
+    
+    // Mallorca Info
+    'mallorca.title': 'Descobreix Mallorca',
+    'mallorca.beaches.title': 'Platges Paradisíaques',
+    'mallorca.beaches.description': 'Cala Mondragó, Es Trenc, Cala Figuera - aigües cristal·lines i sorra blanca t\'esperen.',
+    'mallorca.culture.title': 'Patrimoni Cultural',
+    'mallorca.culture.description': 'Palma de Mallorca, Valldemossa, Deià - pobles amb encant i història mil·lenària.',
+    'mallorca.gastronomy.title': 'Gastronomia Local',
+    'mallorca.gastronomy.description': 'Sobrassada, ensaïmada, tumbet - sabors autèntics de la cuina mallorquina.',
+    'mallorca.nature.title': 'Naturalesa Salvatge',
+    'mallorca.nature.description': 'Serra de Tramuntana, Coves del Drac - paisatges únics declarats Patrimoni Mundial.',
+    'mallorca.activities.title': 'Aventures',
+    'mallorca.activities.description': 'Senderisme, ciclisme, esports aquàtics - activitats per a tots els gustos.',
+    'mallorca.relaxation.title': 'Relax i Benestar',
+    'mallorca.relaxation.description': 'Spas, wellness, cales secretes - el lloc perfecte per desconnectar i relaxar-se.',
+    'mallorca.footer': 'Aprofita la teva estada per explorar aquesta illa màgica! 🏝️',
+    
+    // Countdown
+    'countdown.days': 'Dies',
+    'countdown.hours': 'Hores', 
+    'countdown.minutes': 'Minuts',
+    'countdown.seconds': 'Segons',
+    
+    // Footer
+    'footer.seeYouSoon': 'Ens veiem aviat!',
+    'footer.withLove': 'Amb molt d\'amor,',
+    'footer.madeWithLove': 'Fet amb ❤️ per celebrar el nostre amor',
   },
 };
 
