@@ -1,14 +1,15 @@
 import React from 'react';
 import { useLanguage, Language } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
+import catalanFlag from '@/assets/catalan-flag.jpeg';
 
 const LanguageToggle = () => {
   const { language, setLanguage } = useLanguage();
 
-  const languages: { code: Language; label: string; flag: string }[] = [
+  const languages: { code: Language; label: string; flag?: string; flagImage?: string }[] = [
     { code: 'sv', label: 'Svenska', flag: '🇸🇪' },
     { code: 'es', label: 'Español', flag: '🇪🇸' },
-    { code: 'ca', label: 'Català', flag: '🏴' },
+    { code: 'ca', label: 'Català', flagImage: catalanFlag },
     { code: 'en', label: 'English', flag: '🇬🇧' },
   ];
 
@@ -21,13 +22,17 @@ const LanguageToggle = () => {
             variant={language === lang.code ? "default" : "ghost"}
             size="sm"
             onClick={() => setLanguage(lang.code)}
-            className={`rounded-full w-8 h-8 p-0 text-sm transition-all ${
+            className={`rounded-full w-8 h-8 p-0 text-sm transition-all overflow-hidden ${
               language === lang.code 
                 ? 'bg-primary text-primary-foreground shadow-md' 
                 : 'hover:bg-accent hover:text-accent-foreground'
             }`}
           >
-            {lang.flag}
+            {lang.flagImage ? (
+              <img src={lang.flagImage} alt={lang.label} className="w-full h-full object-cover" />
+            ) : (
+              lang.flag
+            )}
           </Button>
         ))}
       </div>
