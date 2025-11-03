@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLanguage, Language } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import catalanFlag from '@/assets/catalan-flag.jpeg';
+import catalanFlag from '@/assets/catalan-flag.png';
 
 const LanguageToggle = () => {
   const { language, setLanguage } = useLanguage();
@@ -29,7 +29,7 @@ const LanguageToggle = () => {
             }`}
           >
             {lang.flagImage ? (
-              <img src={lang.flagImage} alt={lang.label} className="w-5 h-5 object-cover rounded-sm bg-transparent" style={{ mixBlendMode: 'multiply' }} />
+              <img src={lang.flagImage} alt={lang.label} className="w-5 h-5 object-cover rounded-sm" />
             ) : (
               lang.flag
             )}
