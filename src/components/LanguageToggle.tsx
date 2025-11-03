@@ -29,7 +29,7 @@ const LanguageToggle = () => {
             }`}
           >
             {lang.flagImage ? (
-              <img src={lang.flagImage} alt={lang.label} className="w-full h-full object-cover" />
+              <img src={lang.flagImage} alt={lang.label} className="w-5 h-5 object-cover rounded-sm" />
             ) : (
               lang.flag
             )}
