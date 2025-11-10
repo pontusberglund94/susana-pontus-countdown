@@ -204,7 +204,7 @@ const translations = {
     'info.kids.title': 'Niños',
     'info.kids.description': 'Creemos que los invitados disfrutarán más de la boda si es libre de niños. Sin embargo, entendemos que esto simplemente no es posible para algunos y los niños son, por supuesto, bienvenidos.',
     'info.gifts.title': 'Regalos de Boda',
-    'info.gifts.description': 'Por favor, no regalos físicos - no tenemos espacio en nuestras maletas para llevarlos a Suecia.',
+    'info.gifts.description': 'No aceptamos regalos físicos - no tenemos espacio en nuestras maletas! Vuestra presencia es el regalo más importante.',
     
     // Mallorca Info
     'mallorca.title': 'Descubre Mallorca',
@@ -315,7 +315,7 @@ const translations = {
     'info.kids.title': 'Children',
     'info.kids.description': 'We believe guests will enjoy the wedding more if they are able to attend childfree. However, we realize this is simply not possible for some and children are of course welcome.',
     'info.gifts.title': 'Wedding Gifts',
-    'info.gifts.description': 'Please no physical presents - we don\'t have room in our bags to bring them home to Sweden.',
+    'info.gifts.description': 'Physical presents are declined - we don\'t have space in our suitcases! Your presence is the most important present.',
     
     // Mallorca Info
     'mallorca.title': 'Discover Mallorca',
@@ -426,7 +426,7 @@ const translations = {
     'info.kids.title': 'Nens',
     'info.kids.description': 'Creiem que els convidats gaudiran més de la boda si és lliure de nens. No obstant això, entenem que això simplement no és possible per a alguns i els nens són, per descomptat, benvinguts.',
     'info.gifts.title': 'Regals de Casament',
-    'info.gifts.description': 'Si us plau, no regals físics - no tenim espai a les nostres maletes per portar-los a Suècia.',
+    'info.gifts.description': 'No acceptem regals físics - no tenim espai a les nostres maletes! La vostra presència és el regal més important.',
     
     // Mallorca Info
     'mallorca.title': 'Descobreix Mallorca',
