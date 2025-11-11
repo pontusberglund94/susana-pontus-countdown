@@ -520,7 +520,7 @@ const Index = () => {
           <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-6 shadow-warm animate-bounce-in max-w-3xl mx-auto" style={{ animationDelay: '0.4s' }}>
             <iframe 
               src="https://docs.google.com/forms/d/e/1FAIpQLSeMUUMnSxykSv_W1J_VK7Me-d4E7Ydgp27B6Xx_uAuQtLJcnQ/viewform?embedded=true" 
-              className="w-full h-[2000px] border-0 rounded-xl"
+              className="w-full h-[2200px] border-0 rounded-xl"
               loading="lazy"
               title="Formulario de Confirmación RSVP"
             >
